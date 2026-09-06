@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Jeremia Imanuel Werung - QA Engineer, Web Developer, Data Analyst. Information Systems graduate with expertise in software quality assurance and web development.">
+    <meta name="keywords" content="Jeremia Werung, QA Engineer, Web Developer, Data Analyst, Portfolio">
+    <meta name="author" content="Jeremia Imanuel Werung">
+
+    <title>Jeremia Imanuel Werung — Portfolio</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="preload" as="style" href="./build/assets/app-BQyT6bM-.css" /><link rel="modulepreload" as="script" href="./build/assets/app-QPL0WH9f.js" /><link rel="stylesheet" href="./build/assets/app-BQyT6bM-.css" /><script type="module" src="./build/assets/app-QPL0WH9f.js"></script></head>
+<body class="antialiased">
+
+    
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                
+                <a href="#hero" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center font-bold text-white text-lg transition-transform group-hover:scale-110">
+                        J
+                    </div>
+                    <span class="text-lg font-bold text-slate-100 hidden sm:block">
+                        Jeremia<span class="text-indigo-400">.dev</span>
+                    </span>
+                </a>
+
+                
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                
+                <div class="flex items-center gap-3">
+                    <a href="#contact" class="btn-primary hidden sm:inline-flex text-sm">
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                        Hire Me
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-indigo-400 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] hidden"></div>
+
+    
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-72 bg-[#0f172a]/98 backdrop-blur-xl z-[70] p-6">
+        <div class="flex justify-end mb-8">
+            <button id="mobile-menu-close" class="p-2 text-slate-400 hover:text-indigo-400 transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="#hero" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Home</a>
+            <a href="#about" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">About</a>
+            <a href="#experience" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Experience</a>
+            <a href="#projects" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Projects</a>
+            <a href="#skills" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Skills</a>
+            <a href="#education" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Education</a>
+            <a href="#certifications" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Certifications</a>
+            <a href="#contact" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Contact</a>
+            <hr class="border-slate-700 my-2">
+            <a href="#contact" class="btn-primary justify-center">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Hire Me
+            </a>
+        </div>
+    </div>
+
+    
+    <main>
+            <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+    
+    <canvas id="particle-canvas" class="absolute inset-0 z-0"></canvas>
+
+    
+    <div class="bg-decoration w-[600px] h-[600px] bg-indigo-600 -top-40 -right-40 absolute"></div>
+    <div class="bg-decoration w-[500px] h-[500px] bg-cyan-600 -bottom-40 -left-40 absolute"></div>
+    <div class="bg-decoration w-[300px] h-[300px] bg-violet-600 top-1/3 left-1/4 absolute animate-pulse-glow"></div>
+
+    
+    <div class="absolute inset-0 opacity-[0.03]"
+         style="background-image: radial-gradient(circle, #6366f1 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-32 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            <div class="order-2 lg:order-1">
+                
+                <h1 class="font-black leading-tight mb-4"
+                    style="font-size: clamp(1.7rem, 4vw, 3.4rem); animation: slide-up 0.8s ease-out forwards;">
+                    <span class="text-slate-100">Hi, I'm</span><br>
+                    <span class="gradient-text">Jeremia Werung</span>
+                </h1>
+
+                
+                <div class="flex items-center gap-2 mb-6" style="animation: slide-up 1s ease-out forwards;">
+                    <span class="text-xl sm:text-2xl text-slate-400 font-light">I'm a</span>
+                    <span id="typing-text" class="text-xl sm:text-2xl font-semibold text-indigo-400 border-r-2 border-indigo-400 pr-1"
+                          style="animation: blink-caret 0.75s step-end infinite;"></span>
+                </div>
+
+                
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl"
+                   style="animation: slide-up 1.2s ease-out forwards;">
+                    Information Systems student with a strong focus on system analysis, data processing, and operational administration. Highly adaptable and ready to contribute to business operations in a dynamic work environment.
+                </p>
+
+                
+                <div class="flex flex-wrap gap-4" style="animation: slide-up 1.4s ease-out forwards;">
+                    <a href="#projects" class="btn-primary">
+                        <i data-lucide="folder-open" class="w-5 h-5"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn-outline">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Let's Talk
+                    </a>
+                </div>
+
+            </div>
+
+            
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end"
+                 style="animation: fade-in 1.5s ease-out forwards;">
+                
+                
+                <div></div>
+
+                <div class="relative">
+                    
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] rounded-full border border-indigo-500/10 animate-spin" style="animation-duration: 20s;">
+                            <div class="absolute -top-3 left-1/2 w-6 h-6 rounded-lg bg-indigo-500/20 backdrop-blur flex items-center justify-center">
+                                <span class="text-xs">🔍</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] rounded-full border border-cyan-500/10 animate-spin" style="animation-duration: 30s; animation-direction: reverse;">
+                            <div class="absolute -top-3 left-1/2 w-6 h-6 rounded-lg bg-cyan-500/20 backdrop-blur flex items-center justify-center">
+                                <span class="text-xs">💻</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="relative w-56 h-56 sm:w-72 sm:h-72 rounded-3xl overflow-hidden glow group">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-600 via-violet-600 to-cyan-600 flex items-center justify-center">
+                            <div class="text-center">
+                                <span class="text-6xl sm:text-7xl font-black text-white/90">JW</span>
+                                <p class="text-white/60 text-xs mt-2 font-medium tracking-widest uppercase">Portfolio</p>
+                            </div>
+                        </div>
+                        <img src="./images/profile.jpeg" alt="Jeremia Werung" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
+        <span class="text-slate-500 text-xs tracking-widest uppercase">Scroll Down</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400"></i>
+    </div>
+</section>
+    <section id="about" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[400px] h-[400px] bg-indigo-600 -right-48 top-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="user" class="w-3 h-3 mr-1.5"></i>
+                About Me
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Get to Know <span class="gradient-text">Me Better</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+            
+            <div class="lg:col-span-3 reveal">
+                <div class="glass-card p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-slate-100 mb-4 flex items-center gap-2">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-indigo-400"></i>
+                        Who Am I?
+                    </h3>
+                    <div class="space-y-4 text-slate-400 leading-relaxed">
+                        <p>
+                            Information Systems graduate from <span class="text-indigo-400 font-medium">Universitas Teknologi Yogyakarta</span>
+                            with a strong focus on software quality assurance, system analysis, and data processing.
+                        </p>
+                        <p>
+                            Equipped with hands-on experience ranging from managing daily transaction records to building
+                            integrated web systems and conducting comprehensive software testing. Highly adaptable,
+                            detail-oriented, and fully prepared to contribute to delivering high-quality software products.
+                        </p>
+                        <p>
+                            I believe in continuous learning and staying updated with the latest technologies.
+                            My goal is to bridge the gap between development and quality, ensuring every product
+                            I touch meets the highest standards.
+                        </p>
+                    </div>
+
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-700/50">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center">
+                                <i data-lucide="user" class="w-5 h-5 text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider">Name</p>
+                                <p class="text-sm text-slate-200 font-medium">Jeremia Imanuel Werung</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                                <i data-lucide="cake" class="w-5 h-5 text-cyan-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider">Age</p>
+                                <p class="text-sm text-slate-200 font-medium">21 Years Old</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-violet-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider">Location</p>
+                                <p class="text-sm text-slate-200 font-medium">Yogyakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                                <i data-lucide="briefcase" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider">Focus</p>
+                                <p class="text-sm text-slate-200 font-medium">QA & Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="lg:col-span-2 space-y-6 reveal">
+                
+                <div class="glass-card p-6 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-indigo-400"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-100 mb-2">Quality Assurance</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Ensuring software reliability through comprehensive testing strategies, bug tracking, and quality metrics analysis.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+                        <i data-lucide="code-2" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-100 mb-2">Web Development</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Building responsive, user-friendly web applications using modern technologies like Laravel, Tailwind CSS, and more.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 group">
+                    <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-violet-400"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-100 mb-2">Data Analysis</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Transforming raw data into meaningful insights using analytical tools and visualization techniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="experience" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[500px] h-[500px] bg-violet-600 -left-48 top-1/2 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="briefcase" class="w-3 h-3 mr-1.5"></i>
+                Experience
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                My <span class="gradient-text">Work Journey</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                Here's a timeline of my professional experience and contributions
+            </p>
+        </div>
+
+        
+        <div class="max-w-3xl mx-auto relative">
+            
+            <div class="timeline-line"></div>
+
+            
+            <div class="relative pl-12 pb-12 reveal">
+                <div class="absolute left-[14px] top-1">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="glass-card p-6">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <span class="tag">
+                            <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                            Feb 2025 – Feb 2026
+                        </span>
+                        <span class="tag" style="background: rgba(6, 182, 212, 0.1); color: #22d3ee; border-color: rgba(6, 182, 212, 0.2);">
+                            Internship
+                        </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-100 mb-1">IT & Operations Intern</h3>
+                    <p class="text-indigo-400 text-sm font-medium mb-3">Aurora Beauty Salon</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Managed weekly operational administration by organizing transaction records and serving as the primary point of contact for online customer communications and reservations.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Analyzed and processed operational data to resolve the issue of overlapping manual schedules, utilizing these insights to design a more efficient solution.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Built a web-based reservation platform to support integrated business processes, proving reduced booking durations, minimized customer queues, and increased accuracy.
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="tag text-xs">Web Development</span>
+                        <span class="tag text-xs">Data Analysis</span>
+                        <span class="tag text-xs">Admin Operation</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="relative pl-12 pb-12 reveal">
+                <div class="absolute left-[14px] top-1">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="glass-card p-6">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <span class="tag">
+                            <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                            Sept 2025 – Jan 2026
+                        </span>
+                        <span class="tag" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">
+                            Internship
+                        </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-100 mb-1">UI/UX Designer & QA Intern</h3>
+                    <p class="text-indigo-400 text-sm font-medium mb-3">PT. Swevel Universal Media</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Conducted manual testing on the developed web application to ensure strict adherence to the original design specifications, verifying color hex codes, typography, and button functionality.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Actively identified UI discrepancies and functional errors (bugs) during the development phase and reported issues via internal team channels.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Liaised regularly with Fullstack Developers to discuss technical feasibility and resolve interface issues.
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="tag text-xs">QA Testing</span>
+                        <span class="tag text-xs">UI/UX Design</span>
+                        <span class="tag text-xs">Bug Reporting</span>
+                    </div>
+                  <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <a href="./docs/magang.pdf" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 transition-colors">
+                            <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                            View Surat Keterangan Magang
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="relative pl-12 pb-12 reveal">
+                <div class="absolute left-[14px] top-1">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="glass-card p-6">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <span class="tag">
+                            <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                            Sept 2024 – Nov 2024
+                        </span>
+                        <span class="tag" style="background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.2);">
+                            Internship
+                        </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-100 mb-1">Barista Intern</h3>
+                    <p class="text-indigo-400 text-sm font-medium mb-3">Personality Kopi</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Strictly followed Standard Operating Procedures (SOP) for recipes and station cleanliness.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Responsible for the precise calibration of espresso machines and measurements, developing a habit of double-checking results.
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="tag text-xs">Attention to Detail</span>
+                        <span class="tag text-xs">SOP Compliance</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="relative pl-12 reveal">
+                <div class="absolute left-[14px] top-1">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="glass-card p-6">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <span class="tag">
+                            <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                            2023 – 2024
+                        </span>
+                        <span class="tag" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">
+                            Organization
+                        </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-100 mb-1">HMSI UTY President</h3>
+                    <p class="text-indigo-400 text-sm font-medium mb-3">Himpunan Mahasiswa Sistem Informasi (HMSI) UTY</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Led the organization by coordinating 5 divisions and executing 20+ programs.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Successfully rebuilt connections within the student network and created a welcoming environment, increasing member participation and retention.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Organized collaborative projects and study tours, fostering a culture of clear communication.
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="tag text-xs">Strategic Leadership</span>
+                        <span class="tag text-xs">Team Collaboration</span>
+                        <span class="tag text-xs">Community Building</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <a href="./docs/ormawa.pdf" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 transition-colors">
+                            <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                            View SK Kepengurusan Ormawa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="projects" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[500px] h-[500px] bg-cyan-600 -right-48 bottom-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="folder-open" class="w-3 h-3 mr-1.5"></i>
+                Projects
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Featured <span class="gradient-text">Projects</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                A showcase of my work — from web applications to quality assurance projects
+            </p>
+        </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+            
+            <div class="reveal">
+                <div class="glass-card overflow-hidden project-card group cursor-pointer">
+                    
+                    <div class="relative h-48 overflow-hidden">
+                        
+                        
+                        <!-- <img src="./images/nama_foto_project.jpg" alt="Project" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"> -->
+
+                        <div class="w-full h-full bg-gradient-to-br from-pink-500 via-rose-500 to-purple-600 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="scissors" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                <span class="text-white/80 text-sm font-medium">Aurora Beauty Salon</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="w-full">
+                                <div class="flex gap-3">
+                                    <a href="https://www.figma.com/design/NoeYU0fwPnPtw9i77WpGkt/Aurora-Beauty-Salon-Design?node-id=0-1&t=pqOAho4UvNWyimCI-1" target="_blank" class="btn-primary text-xs py-2 px-3">
+                                        <i data-lucide="external-link" class="w-3 h-3"></i>
+                                        View Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="w-2 h-2 rounded-full bg-pink-400"></span>
+                            <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Academic Project</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100 mb-2 group-hover:text-indigo-400 transition-colors">
+                            Aurora Beauty Salon System
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                            Created comprehensive test cases, conducted Black Box testing on critical features (Login, Booking, Payment), and documented test validation scenarios.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag text-xs">Test Planning</span>
+                            <span class="tag text-xs">Black Box Testing</span>
+                            <span class="tag text-xs">Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card overflow-hidden project-card group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="cpu" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                <span class="text-white/80 text-sm font-medium">Estimator.id</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="w-full">
+                                <div class="flex gap-3">
+                                    <a href="https://www.figma.com/design/mlFFt0G4wTXm3jlcCB2c17/Landing-Page--Copy-?node-id=570-43024&t=ImJ5uIRuKrp5mbZA-1" target="_blank" class="btn-primary text-xs py-2 px-3">
+                                        <i data-lucide="external-link" class="w-3 h-3"></i>
+                                        View Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+                            <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Academic Project</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100 mb-2 group-hover:text-indigo-400 transition-colors">
+                            Estimator.id (AI Integration)
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                            Conducted specific testing on AI-generated responses for material price estimation, evaluated performance monitoring AI latency, and documented validation scenarios.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag text-xs">AI Accuracy</span>
+                            <span class="tag text-xs">Performance Testing</span>
+                            <span class="tag text-xs">Validation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card overflow-hidden project-card group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="map" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                <span class="text-white/80 text-sm font-medium">RTHP System</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="w-full">
+                                <div class="flex gap-3">
+                                    <a href="https://www.figma.com/design/CjAiulADb2mUAmiMhLD6Nw/RTHP-KOTA-YOGYAKARTA?node-id=1-2&t=HZne0Ic2mGjqKjgJ-1" target="_blank" class="btn-primary text-xs py-2 px-3">
+                                        <i data-lucide="external-link" class="w-3 h-3"></i>
+                                        View Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                            <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Academic Project</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100 mb-2 group-hover:text-indigo-400 transition-colors">
+                            RTHP System (DLH Yogyakarta)
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                            Executed manual testing on the Green Open Space mapping system, verified Admin Dashboard CRUD operations, and ensured data stability.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag text-xs">Functional Testing</span>
+                            <span class="tag text-xs">CRUD Validation</span>
+                            <span class="tag text-xs">Manual Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card overflow-hidden h-full flex items-center justify-center min-h-[380px] border-dashed border-slate-700">
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 rounded-2xl bg-slate-700/50 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="plus" class="w-8 h-8 text-slate-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-400 mb-2">More Coming Soon</h3>
+                        <p class="text-sm text-slate-500">Currently working on exciting new projects. Stay tuned!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section id="skills" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[400px] h-[400px] bg-indigo-600 -right-40 top-1/4 absolute"></div>
+    <div class="bg-decoration w-[300px] h-[300px] bg-cyan-600 -left-32 bottom-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="wrench" class="w-3 h-3 mr-1.5"></i>
+                Skills
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Technical <span class="gradient-text">Expertise</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                Technologies and tools I work with on a regular basis
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+            
+            <div class="space-y-6 reveal">
+                <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2 mb-6">
+                    <i data-lucide="code-2" class="w-5 h-5 text-indigo-400"></i>
+                    Programming & Frameworks
+                </h3>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">PHP / Laravel</span>
+                        <span class="text-xs text-indigo-400 font-semibold">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 85%"></div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">HTML / CSS / Tailwind</span>
+                        <span class="text-xs text-indigo-400 font-semibold">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 90%"></div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">JavaScript</span>
+                        <span class="text-xs text-indigo-400 font-semibold">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 75%"></div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">MySQL / Database</span>
+                        <span class="text-xs text-indigo-400 font-semibold">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 80%"></div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">Python</span>
+                        <span class="text-xs text-indigo-400 font-semibold">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 65%"></div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-slate-300">Git / Version Control</span>
+                        <span class="text-xs text-indigo-400 font-semibold">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--skill-level: 78%"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="space-y-6 reveal">
+                
+                <div class="glass-card p-6">
+                    <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                        </div>
+                        Quality Assurance
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Manual Testing</span>
+                        <span class="tag">Black Box Testing</span>
+                        <span class="tag">Functional Testing (CRUD)</span>
+                        <span class="tag">UI/UX Testing</span>
+                        <span class="tag">Test Cases & Scenarios</span>
+                        <span class="tag">Bug Reports</span>
+                    </div>
+                </div>
+
+                
+                <div class="glass-card p-6">
+                    <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                            <i data-lucide="bar-chart-3" class="w-4 h-4 text-violet-400"></i>
+                        </div>
+                        Data & Analytics
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Data Processing</span>
+                        <span class="tag">RapidMiner</span>
+                        <span class="tag">Microsoft Excel</span>
+                    </div>
+                </div>
+
+                
+                <div class="glass-card p-6">
+                    <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                            <i data-lucide="settings-2" class="w-4 h-4 text-cyan-400"></i>
+                        </div>
+                        Tools & Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Figma</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Microsoft Word</span>
+                        <span class="tag">Microsoft Excel</span>
+                        <span class="tag">RapidMiner</span>
+                    </div>
+                </div>
+
+                
+                <div class="glass-card p-6">
+                    <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center">
+                            <i data-lucide="heart-handshake" class="w-4 h-4 text-amber-400"></i>
+                        </div>
+                        Soft Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Attention to Detail</span>
+                        <span class="tag">Analytical Thinking</span>
+                        <span class="tag">Effective Communication</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="education" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[400px] h-[400px] bg-violet-600 -left-40 top-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="graduation-cap" class="w-3 h-3 mr-1.5"></i>
+                Education
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Academic <span class="gradient-text">Background</span>
+            </h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-8">
+            
+            <div class="reveal">
+                <div class="glass-card p-6 sm:p-8">
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        
+                        <div class="shrink-0">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                                <i data-lucide="graduation-cap" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center gap-3 mb-2">
+                                <span class="tag">
+                                    <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                                    2022 – 2026
+                                </span>
+                                <span class="tag" style="background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.2);">
+                                    Graduated
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-1 flex items-center gap-2 relative z-20">
+                                Bachelor of Information Systems (S.Kom)
+                            </h3>
+                            <p class="text-indigo-400 font-medium mb-4">Universitas Teknologi Yogyakarta (GPA: 3.67)</p>
+                            <div class="space-y-3 text-sm text-slate-400">
+                                <p>
+                                    Focused on software engineering, web development, database management, and system analysis.
+                                    Completed thesis on the development of an integrated information system for Aurora Beauty Salon.
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-medium mb-2">Key Coursework</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="tag text-xs">Software Engineering</span>
+                                    <span class="tag text-xs">Database Systems</span>
+                                    <span class="tag text-xs">Web Programming</span>
+                                    <span class="tag text-xs">System Analysis</span>
+                                    <span class="tag text-xs">Data Structures</span>
+                                    <span class="tag text-xs">Software Testing</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-700/50">
+                                <a href="./docs/ijazah.pdf" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 transition-colors">
+                                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                    View Certificate (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card p-6 sm:p-8">
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        
+                        <div class="shrink-0">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                                <i data-lucide="school" class="w-8 h-8 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center gap-3 mb-2">
+                                <span class="tag">
+                                    <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                                    2019 – 2022
+                                </span>
+                                <span class="tag" style="background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.2);">
+                                    Graduated
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-1">Senior High School 1 Kotamobagu</h3>
+                            <p class="text-cyan-400 font-medium mb-4">AVG Score: 93.7</p>
+                            <p class="text-sm text-slate-400">
+                                Completed senior high school education with a focus on natural sciences,
+                                building a strong foundation in analytical thinking and problem solving.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="certifications" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[400px] h-[400px] bg-cyan-600 -right-40 bottom-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="award" class="w-3 h-3 mr-1.5"></i>
+                Certifications
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Licenses & <span class="gradient-text">Certifications</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                Professional certifications and courses I've completed to stay current
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            
+            <div class="reveal">
+                <div class="glass-card p-6 h-full">
+                    <div class="flex items-start gap-4">
+                        <div class="cert-badge bg-gradient-to-br from-yellow-500/20 to-amber-600/20 text-yellow-400">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-base font-bold text-slate-100 mb-1">Microsoft Office Specialist</h4>
+                            <p class="text-indigo-400 text-sm font-medium mb-2">Microsoft</p>
+                            <p class="text-xs text-slate-500 flex items-center gap-1 mb-3">
+                                <i data-lucide="calendar" class="w-3 h-3"></i>
+                                2024
+                            </p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Professional certification in utilizing Microsoft Office tools (Excel, Word, PowerPoint) for effective documentation and data management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card p-6 h-full">
+                    <div class="flex items-start gap-4">
+                        <div class="cert-badge bg-gradient-to-br from-emerald-500/20 to-teal-600/20 text-emerald-400">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-base font-bold text-slate-100 mb-1">Data Engineering Professional</h4>
+                            <p class="text-indigo-400 text-sm font-medium mb-2">Certification</p>
+                            <p class="text-xs text-slate-500 flex items-center gap-1 mb-3">
+                                <i data-lucide="calendar" class="w-3 h-3"></i>
+                                2024
+                            </p>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                Data Engineering Professional Certification course encompassing data processing, modeling, and pipelines.
+                            </p>
+                            <a href="./docs/data-engineering.pdf" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors">
+                                <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="reveal">
+                <div class="glass-card p-6 h-full">
+                    <div class="flex items-start gap-4">
+                        <div class="cert-badge bg-gradient-to-br from-purple-500/20 to-violet-600/20 text-purple-400">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-base font-bold text-slate-100 mb-1">English Proficiency (TOEFL)</h4>
+                            <p class="text-indigo-400 text-sm font-medium mb-2">Test Score</p>
+                            <p class="text-xs text-slate-500 flex items-center gap-1 mb-3">
+                                <i data-lucide="calendar" class="w-3 h-3"></i>
+                                2026
+                            </p>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                TOEFL ITP English proficiency evaluation demonstrating ability to comprehend and communicate effectively in English.
+                            </p>
+                            <a href="./docs/toefl.pdf" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors">
+                                <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section id="contact" class="relative py-20 lg:py-28 overflow-hidden">
+    
+    <div class="bg-decoration w-[500px] h-[500px] bg-indigo-600 -left-48 top-20 absolute"></div>
+    <div class="bg-decoration w-[400px] h-[400px] bg-violet-600 -right-48 bottom-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="mail" class="w-3 h-3 mr-1.5"></i>
+                Contact
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Let's Work <span class="gradient-text">Together</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                Have a project in mind or want to collaborate? Feel free to reach out — I'd love to hear from you!
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
+            
+            <div class="lg:col-span-2 space-y-6 reveal">
+                
+                <a href="mailto:jeremia07102004@gmail.com" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="mail" class="w-6 h-6 text-indigo-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Email</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-indigo-400 transition-colors">jeremia07102004@gmail.com</p>
+                    </div>
+                </a>
+
+                
+                <a href="https://wa.me/620895805193249" target="_blank" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="phone" class="w-6 h-6 text-emerald-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">WhatsApp</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-emerald-400 transition-colors">0895805193249</p>
+                    </div>
+                </a>
+
+                
+                <a href="https://instagram.com/jeremia.werung" target="_blank" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Instagram</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-pink-400 transition-colors">@jeremia.werung</p>
+                    </div>
+                </a>
+
+                
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Location</p>
+                        <p class="text-sm text-slate-200 font-medium">Yogyakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="lg:col-span-3 reveal">
+                <div class="glass-card p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-slate-100 mb-6 flex items-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5 text-indigo-400"></i>
+                        Send Me a Message
+                    </h3>
+                    <form action="mailto:jeremia07102004@gmail.com" method="GET" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+                                <input type="text" name="name" placeholder="John Doe"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Your Email</label>
+                                <input type="email" name="email" placeholder="john@example.com"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+                            <input type="text" name="subject" placeholder="Project Collaboration"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                            <textarea name="body" rows="5" placeholder="Tell me about your project or idea..."
+                                class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full justify-center py-3.5 text-base">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <p class="text-xs text-slate-500 text-center mt-4">
+                        This will open your default email client. You can also reach me directly via WhatsApp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    
+    <footer class="relative border-t border-slate-800/50 bg-[#0a0f1e]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                
+                <div>
+                    <a href="#hero" class="flex items-center gap-2 mb-4 group">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center font-bold text-white text-lg transition-transform group-hover:scale-110">
+                            J
+                        </div>
+                        <span class="text-lg font-bold text-slate-100">
+                            Jeremia<span class="text-indigo-400">.dev</span>
+                        </span>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                        QA Engineer & Web Developer based in Yogyakarta, Indonesia. Building quality software with passion and precision.
+                    </p>
+                </div>
+
+                
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Quick Links</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="#about" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">About</a>
+                        <a href="#experience" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Experience</a>
+                        <a href="#projects" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Projects</a>
+                        <a href="#skills" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Skills</a>
+                        <a href="#education" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Education</a>
+                        <a href="#contact" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Contact</a>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Get in Touch</h4>
+                    <div class="space-y-3">
+                        <a href="mailto:jeremia07102004@gmail.com" class="flex items-center gap-3 text-slate-400 hover:text-indigo-400 transition-colors text-sm">
+                            <i data-lucide="mail" class="w-4 h-4 text-indigo-400"></i>
+                            jeremia07102004@gmail.com
+                        </a>
+                        <a href="tel:+620895805193249" class="flex items-center gap-3 text-slate-400 hover:text-indigo-400 transition-colors text-sm">
+                            <i data-lucide="phone" class="w-4 h-4 text-indigo-400"></i>
+                            0895805193249
+                        </a>
+                        <a href="https://instagram.com/jeremia.werung" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-indigo-400 transition-colors text-sm">
+                            <i data-lucide="instagram" class="w-4 h-4 text-indigo-400"></i>
+                            @jeremia.werung
+                        </a>
+                        <div class="flex items-center gap-3 text-slate-400 text-sm">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i>
+                            Yogyakarta, Indonesia
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="mt-12 pt-8 border-t border-slate-800/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">
+                    &copy; 2026 Jeremia Imanuel Werung. All rights reserved.
+                </p>
+                <p class="text-slate-600 text-xs">
+                    Built with <span class="text-red-400">&hearts;</span> using Laravel & Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-indigo-500/90 backdrop-blur-md text-white flex items-center justify-center shadow-lg shadow-indigo-500/30 hover:bg-indigo-500 transition-all duration-300 opacity-0 pointer-events-none translate-y-4">
+        <i data-lucide="chevron-up" class="w-5 h-5"></i>
+    </button>
+
+    
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
