@@ -1,0 +1,104 @@
+ 
+SUMMARY Information Systems student at Universitas Teknologi Yogyakarta with a strong focus on system analysis, data processing, and 
+operational administration. Equipped with hands-on experience ranging from managing daily transaction records to building 
+integrated systems, I am accustomed to preparing detailed work reports and communicating effectively within teams and across 
+departments. Highly adaptable and fully prepared to contribute to the smooth running of business operations in a dynamic work  
+environment. 
+EXPERIENCE 
+AURORA BEAUTY SALON  IT & Operations Intern | Feb 2025 û Feb 2026 
+ò Operational Administration: Managed weekly operational administration by organizing transaction records and serving 
+as the primary point of contact for online customer communications and reservations . 
+ò Data Analysis & Processing: Analyzed and processed operational data to resolve the issue of overlapping manual 
+schedules, utilizing these insights to design a more efficient solution. 
+ò System Implementation & Impact: Built a web-based reservation platform to support integrated business processes. This 
+initiative successfully delivered a targeted system, proven by reduced booking durations,  minimized customer queues, and 
+increased accuracy in daily record-keepin. 
+ 
+PT. SWEVEL UNIVERSAL MEDIA                                      UI/UX Designer & QA Intern | Sept 2025 û Jan 2026 
+ò Design Quality Assurance (Design QA): Conducted manual testing on the developed web application to ensure strict 
+adherence to the original design specifications. Meticulously verified color hex codes, typography, and button functionality 
+against high-fidelity prototypes. 
+ò Bug Identification & Reporting: Actively identified UI discrepancies and functional errors (bugs) during the development 
+phase. Documented and reported issues via internal team channels, ensuring clear communication with the development 
+team for prompt resolution. 
+ò Developer Collaboration: Liaised regularly with Fullstack Developers to discuss technical feasibility and resolve 
+interface issues, ensuring the final product was not only visually accurate but also user friendly.  
+ 
+PERSONALITY KOPI Barista Intern | September û November 2024 
+ò Operational Discipline & SOP Compliance: Strictly followed Standard Operating Procedures (SOP) for recipes and station 
+cleanliness. This experience trained me to maintain high standards and consistency in every output.  
+ò Responsibility: Learn to handle my duties seriously, ensuring that every task, from cleaning to serving, was done properly 
+to support the team. 
+ò Attention to Detail: Responsible for the precise calibration of espresso machines and measurements. Developed a habit of 
+double-checking results to ensure zero defects in the final product served to customers. 
+ 
+HMSI UTY President | 2023 - 2024 
+ò Strategic Leadership: Led the organization by coordinating 5 divisions and executing 20+ programs. This role honed my 
+ability to manage complex workflows and ensure every division operated according to the planned timeline.  
+ò Building Community: Successfully rebuilt connections within the student network and created a welcoming environment, 
+which increased member participation and retention. 
+ò Team Collaboration: Organized collaborative projects and study tours. Learned that effective leadership relies on clear 
+communication and fostering a culture where every team member's input is valued. 
+ 
+ACADEMIC PROJECT 
+AURORA BEAUTY SALON SYSTEM 
+ò Test Planning: Created comprehensive test cases for a web-based salon booking system. 
+ò Black Box Testing: Conducted Black Box Testing on critical features (Login, Booking, Payment) to ensure system 
+functionality met requirements. 
+ò Documentation: Documented test results and validation scenarios to verify that the software was bug-free. 
+ 
+ESTIMATOR.ID (AI INTEGRATION) 
+ò AI Accuracy Validation: Conducted specific testing on the AI-generated responses to ensure the accuracy of material 
+price estimations and data retrieval against the vendor database. 
+ò Performance Testing: Evaluated the system's performance by monitoring the AI's response time (latency) on the web 
+platform, ensuring a fast and seamless user experience. 
+ò Documentation: Documented test results and validation scenarios to verify that the software was bug-free. 
+ 
+RTHP SYSTEM (DINAS LINGKUNGAN KOTA YOGYAKARTA) 
+ò Functional Testing: Executed manual testing on the Green Open Space (Ruang Terbuka Hijau) mapping and reporting 
+system. 
+ò CRUD Validation: Verified the functionality of the Admin Dashboard, specifically focusing on the stability of Login 
+features and CRUD operations (Create, Read, Update, Delete) for spatial data entry.  
+JEREMIAIMANUELWERUNG 
+jeremia07102004@gmail.com | 0895805193249 | @jeremia.werung | 21 y/o | Yogyakarta, Indonesia 
+
+--- PAGE BREAK ---
+ 
+ 
+Hard Skills: 
+SKILLS & CERTIFICATIONS 
+Interpersonal Skills: 
+1. Software Testing: Proficient in Manual 
+Testing, Black Box Testing, Functional Testing 
+(CRUD), and UI/UX Testing. 
+2. QA Documentation: Experienced in creating 
+comprehensive Test Cases, Test Scenarios, and Bug 
+Reports. 
+3. Tools Proficiency: Skilled in using Figma (for 
+Design QA). Microsoft Office (Excel/Word for 
+Documentation), RapidMiner, and basic familiarity 
+with VS Code. 
+4. Web Concepts: Understanding of web application 
+flows, login validation, and input data processing. 
+1. Attention to Detail: Meticulous in spotting visual 
+discrepancies and functional errors (honed through QA & 
+Barista experience). 
+2. Analytical Thinking: Strong ability to analyze system 
+logic and predict potential user errors. 
+3. Effective Communication: Capable of bridging the gap 
+between technical and non-technical teams (Developer 
+Liaison). 
+4. Problem Solving: Critical thinker with a solution-
+oriented mindset when facing technical issues. 
+5. Adaptability: Quick learner in understanding new 
+product features and business requirements. 
+ 
+ 
+| English Proficiency Test (TOEFL Prediction) By UTY Education, Certification, and Training Center  | 
+| Microsoft Office Specialist By Microsoft |  Data Engineering Professional Certification By RAPIDMINER | 
+ 
+EDUCATION 
+Information System Student at University Technology Yogyakarta (GPA 3,67) (2022 û 2026) 
+Senior High School 1 Kotamobagu (AVG 93,7) (2019 û 2022) 
+--- PAGE BREAK ---
+

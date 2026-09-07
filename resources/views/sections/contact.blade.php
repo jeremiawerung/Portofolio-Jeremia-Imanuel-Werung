@@ -1,0 +1,112 @@
+{{-- ===== CONTACT SECTION ===== --}}
+<section id="contact" class="relative py-20 lg:py-28 overflow-hidden">
+    {{-- Background --}}
+    <div class="bg-decoration w-[500px] h-[500px] bg-indigo-600 -left-48 top-20 absolute"></div>
+    <div class="bg-decoration w-[400px] h-[400px] bg-violet-600 -right-48 bottom-20 absolute"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {{-- Section Header --}}
+        <div class="text-center mb-16 reveal">
+            <span class="tag mb-4 inline-flex">
+                <i data-lucide="mail" class="w-3 h-3 mr-1.5"></i>
+                Contact
+            </span>
+            <h2 class="section-title text-slate-100 mt-3">
+                Let's Work <span class="gradient-text">Together</span>
+            </h2>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                Have a project in mind or want to collaborate? Feel free to reach out — I'd love to hear from you!
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">
+            {{-- Contact Info Cards --}}
+            <div class="lg:col-span-2 space-y-6 reveal">
+                {{-- Email --}}
+                <a href="mailto:jeremia07102004@gmail.com" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="mail" class="w-6 h-6 text-indigo-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Email</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-indigo-400 transition-colors">jeremia07102004@gmail.com</p>
+                    </div>
+                </a>
+
+                {{-- Phone --}}
+                <a href="https://wa.me/620895805193249" target="_blank" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="phone" class="w-6 h-6 text-emerald-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">WhatsApp</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-emerald-400 transition-colors">0895805193249</p>
+                    </div>
+                </a>
+
+                {{-- Instagram --}}
+                <a href="https://instagram.com/jeremia.werung" target="_blank" class="glass-card p-5 flex items-center gap-4 group block">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0 transition-transform group-hover:scale-110">
+                        <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Instagram</p>
+                        <p class="text-sm text-slate-200 font-medium group-hover:text-pink-400 transition-colors">@jeremia.werung</p>
+                    </div>
+                </a>
+
+                {{-- Location --}}
+                <div class="glass-card p-5 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-medium">Location</p>
+                        <p class="text-sm text-slate-200 font-medium">Yogyakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Contact Form --}}
+            <div class="lg:col-span-3 reveal">
+                <div class="glass-card p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-slate-100 mb-6 flex items-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5 text-indigo-400"></i>
+                        Send Me a Message
+                    </h3>
+                    <form action="mailto:jeremia07102004@gmail.com" method="GET" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+                                <input type="text" name="name" placeholder="John Doe"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Your Email</label>
+                                <input type="email" name="email" placeholder="john@example.com"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+                            <input type="text" name="subject" placeholder="Project Collaboration"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                            <textarea name="body" rows="5" placeholder="Tell me about your project or idea..."
+                                class="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 text-sm placeholder-slate-500 focus:ring-0 transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full justify-center py-3.5 text-base">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <p class="text-xs text-slate-500 text-center mt-4">
+                        This will open your default email client. You can also reach me directly via WhatsApp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
