@@ -42,10 +42,9 @@
                     <a href="#experience" class="nav-link">Experience</a>
                     <a href="#projects" class="nav-link">Projects</a>
                     <a href="#case-studies" class="nav-link">Case Studies</a>
-                    <a href="#automation" class="nav-link">Automation</a>
-                    <a href="#articles" class="nav-link">Articles</a>
-                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#fyi" class="nav-link">FYI</a>
                     <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#qualifications" class="nav-link">Qualifications</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
 
@@ -79,10 +78,9 @@
             <a href="#experience" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Experience</a>
             <a href="#projects" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Projects</a>
             <a href="#case-studies" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Case Studies</a>
-            <a href="#automation" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Automation</a>
-            <a href="#articles" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Articles</a>
-            <a href="#products" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Products</a>
+            <a href="#fyi" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">FYI</a>
             <a href="#skills" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Skills</a>
+            <a href="#qualifications" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Qualifications</a>
             <a href="#contact" class="text-slate-300 hover:text-indigo-400 transition-colors py-2 text-lg font-medium">Contact</a>
             <hr class="border-slate-700 my-2">
             <a href="#contact" class="btn-primary justify-center">
@@ -124,10 +122,9 @@
                         <a href="#experience" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Experience</a>
                         <a href="#projects" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Projects</a>
                         <a href="#case-studies" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Case Studies</a>
-                        <a href="#automation" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Automation</a>
-                        <a href="#articles" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Articles</a>
-                        <a href="#products" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Products</a>
+                        <a href="#fyi" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">FYI</a>
                         <a href="#skills" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Skills</a>
+                        <a href="#qualifications" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Qualifications</a>
                         <a href="#contact" class="text-slate-400 hover:text-indigo-400 transition-colors text-sm py-1">Contact</a>
                     </div>
                 </div>
@@ -145,7 +142,11 @@
                             0895805193249
                         </a>
                         <a href="https://instagram.com/jeremia.werung" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-indigo-400 transition-colors text-sm">
-                            <i data-lucide="instagram" class="w-4 h-4 text-indigo-400"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-400">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
                             @jeremia.werung
                         </a>
                         <div class="flex items-center gap-3 text-slate-400 text-sm">

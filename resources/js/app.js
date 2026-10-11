@@ -3,36 +3,30 @@ import './bootstrap';
 // ============================================
 // Scroll Reveal Animation
 // ============================================
-const revealElements = () => {
-    const elements = document.querySelectorAll('.reveal');
-    const windowHeight = window.innerHeight;
-
-    elements.forEach((el, index) => {
-        const elementTop = el.getBoundingClientRect().top;
-        const revealPoint = windowHeight - 100;
-
-        if (elementTop < revealPoint) {
-            setTimeout(() => {
-                el.classList.add('visible');
-            }, index * 80);
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
         }
     });
-};
+}, { rootMargin: '0px 0px -100px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // ============================================
 // Skill Bar Animation
 // ============================================
-const animateSkillBars = () => {
-    const skillBars = document.querySelectorAll('.skill-bar-fill');
-    const windowHeight = window.innerHeight;
-
-    skillBars.forEach(bar => {
-        const barTop = bar.getBoundingClientRect().top;
-        if (barTop < windowHeight - 50) {
-            bar.classList.add('animate');
+const skillBarObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            skillBarObserver.unobserve(entry.target);
         }
     });
-};
+}, { rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.skill-bar-fill').forEach(bar => skillBarObserver.observe(bar));
 
 // ============================================
 // Navbar Scroll Effect
@@ -113,31 +107,30 @@ if (mobileMenuBtn && mobileMenu) {
 // ============================================
 // Stat Counter Animation
 // ============================================
-const animateCounters = () => {
-    const counters = document.querySelectorAll('[data-count]');
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
 
-    counters.forEach(counter => {
-        if (counter.dataset.animated === 'true') return;
+        const counter = entry.target;
+        counterObserver.unobserve(counter);
 
-        const counterTop = counter.getBoundingClientRect().top;
-        if (counterTop < window.innerHeight - 50) {
-            counter.dataset.animated = 'true';
-            const target = parseInt(counter.dataset.count);
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
+        const target = parseInt(counter.dataset.count);
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
 
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                counter.textContent = Math.floor(current) + (counter.dataset.suffix || '');
-            }, 16);
-        }
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            counter.textContent = Math.floor(current) + (counter.dataset.suffix || '');
+        }, 16);
     });
-};
+}, { rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('[data-count]').forEach(counter => counterObserver.observe(counter));
 
 // ============================================
 // Smooth Scroll for Anchor Links
@@ -292,18 +285,12 @@ const createParticles = () => {
 // ============================================
 window.addEventListener('scroll', () => {
     handleNavScroll();
-    revealElements();
-    animateSkillBars();
     updateActiveNav();
-    animateCounters();
 }, { passive: true });
 
 // Initial calls
 document.addEventListener('DOMContentLoaded', () => {
-    revealElements();
-    animateSkillBars();
     createParticles();
-    animateCounters();
 });
 
 // Back to top button
@@ -323,3 +310,17 @@ if (backToTop) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
+
+// ============================================
+// Layout sidebar + modul per halaman
+// (cuma dimuat di halaman yang butuh)
+// ============================================
+import './portal';
+
+const pageModules = {
+    dashboard: () => import('./pages/dashboard'),
+    'chat-room': () => import('./pages/chat-room'),
+    'smart-talk': () => import('./pages/smart-talk'),
+};
+
+pageModules[document.body.dataset.page]?.();

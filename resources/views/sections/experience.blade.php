@@ -32,6 +32,41 @@
                     <div class="flex flex-wrap items-center gap-3 mb-3">
                         <span class="tag">
                             <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
+                            Feb 2026 – Aug 2026
+                        </span>
+                        <span class="tag" style="background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-color: rgba(245, 158, 11, 0.2);">
+                            Freelance / Contract
+                        </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-100 mb-1">IT Developer & Production Support</h3>
+                    <p class="text-indigo-400 text-sm font-medium mb-3">Cetak Foto Jogja</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Built and maintained the company's internal reservation website (photo printing, photographer rental) and internal admin system, automating student-data verification via Google Sheets/Forms API integration.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                            Verified and reconciled student biodata across sources, then produced student ID card designs in Adobe Photoshop, performing final quality checks before printing.
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="tag text-xs">Web Development</span>
+                        <span class="tag text-xs">Google Sheets API</span>
+                        <span class="tag text-xs">Production QA</span>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Experience 2 --}}
+            <div class="relative pl-12 pb-12 reveal">
+                <div class="absolute left-[14px] top-1">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="glass-card p-6">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <span class="tag">
+                            <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
                             Feb 2025 – Feb 2026
                         </span>
                         <span class="tag" style="background: rgba(6, 182, 212, 0.1); color: #22d3ee; border-color: rgba(6, 182, 212, 0.2);">
@@ -62,7 +97,7 @@
                 </div>
             </div>
 
-            {{-- Experience 2 --}}
+            {{-- Experience 3 --}}
             <div class="relative pl-12 pb-12 reveal">
                 <div class="absolute left-[14px] top-1">
                     <div class="timeline-dot"></div>
@@ -107,7 +142,7 @@
                 </div>
             </div>
 
-            {{-- Experience 3 --}}
+            {{-- Experience 4 --}}
             <div class="relative pl-12 pb-12 reveal">
                 <div class="absolute left-[14px] top-1">
                     <div class="timeline-dot"></div>
@@ -141,7 +176,7 @@
                 </div>
             </div>
 
-            {{-- Experience 4 --}}
+            {{-- Experience 5 --}}
             <div class="relative pl-12 reveal">
                 <div class="absolute left-[14px] top-1">
                     <div class="timeline-dot"></div>

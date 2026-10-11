@@ -82,7 +82,7 @@
                                 <p class="text-white/60 text-xs mt-2 font-medium tracking-widest uppercase">Portfolio</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/profile.jpeg') }}" alt="Jeremia Werung" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <img src="{{ asset('images/profile.jpeg') }}" alt="Jeremia Werung" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                         {{-- Shine effect --}}
                         <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
                     </div>

@@ -35,4 +35,22 @@ return [
         ],
     ],
 
+    // Opsional. Kalau kosong, grafik kontribusi diambil dari API publik tanpa token.
+    'github' => [
+        'token' => env('GITHUB_TOKEN'),
+    ],
+
+    // Kalau kosong, bagian WakaTime di dashboard otomatis disembunyiin.
+    'wakatime' => [
+        'key' => env('WAKATIME_API_KEY'),
+    ],
+
+    // Smart Talk. Bisa provider apa aja yang formatnya OpenAI-compatible
+    // (Groq, OpenRouter, NVIDIA NIM, Gemini). Kalau key kosong, Smart Talk offline.
+    'smart_talk' => [
+        'key' => env('SMART_TALK_API_KEY'),
+        'base_url' => env('SMART_TALK_BASE_URL', 'https://api.groq.com/openai/v1'),
+        'model' => env('SMART_TALK_MODEL', 'openai/gpt-oss-120b'),
+    ],
+
 ];

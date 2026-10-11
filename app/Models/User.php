@@ -43,6 +43,8 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            // is_admin sengaja gak masuk $fillable biar gak bisa diisi lewat form
+            'is_admin' => 'boolean',
         ];
     }
 }
