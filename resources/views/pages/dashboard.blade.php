@@ -2,20 +2,20 @@
 
 @section('title', 'Dashboard')
 @section('page', 'dashboard')
-@section('description', "Jeremia Werung's live developer dashboard — site analytics, GitHub contributions, and coding activity, synced automatically.")
+@section('description', "Jeremia Werung's live dashboard: site traffic, GitHub contributions, and coding activity, updated automatically.")
 
 @php
     $tile = fn (string $label, string $key, string $suffix = '') => compact('label', 'key', 'suffix');
 @endphp
 
 @section('content')
-    <x-page-header title="Dashboard" lead="My personal dashboard, built with Laravel. Every number here is pulled automatically from the source — this site's traffic, my GitHub contributions, and my coding activity — so what you see is the real thing, not a claim." />
+    <x-page-header title="Dashboard" lead="Numbers pulled automatically from GitHub, WakaTime, and this site's own traffic. Nothing here is typed in by hand." />
 
     {{-- ===== SITE ANALYTICS ===== --}}
     <section data-dashboard="analytics" data-endpoint="{{ route('dashboard.analytics') }}">
-        <x-section-heading icon="chart-column" title="Site Analytics" lead="Traffic on this portfolio, tracked privately — no cookies, no raw IP addresses stored.">
+        <x-section-heading title="Site Analytics" lead="Visits to this site. No cookies, and IP addresses are never stored.">
             <x-slot:aside>
-                <span class="text-xs text-slate-500" data-field="tracking_since"></span>
+                <span class="text-xs text-muted" data-field="tracking_since"></span>
             </x-slot:aside>
         </x-section-heading>
 
@@ -35,17 +35,17 @@
 
         <div class="glass-card p-5 mt-4">
             <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
-                <p class="text-sm font-medium text-slate-300">Monthly traffic · last 6 months</p>
-                <div class="flex items-center gap-4 text-xs text-slate-400">
-                    <span class="flex items-center gap-1.5"><span class="legend-swatch" style="background: var(--color-series-1)"></span> Page views</span>
-                    <span class="flex items-center gap-1.5"><span class="legend-swatch" style="background: var(--color-series-2)"></span> Visitors</span>
+                <p class="text-sm font-medium text-ink-2">Monthly traffic (last 6 months)</p>
+                <div class="flex items-center gap-4 text-xs text-ink-2">
+                    <span class="flex items-center gap-1.5"><span class="legend-swatch" style="background: var(--series-1)"></span> Page views</span>
+                    <span class="flex items-center gap-1.5"><span class="legend-swatch" style="background: var(--series-2)"></span> Visitors</span>
                 </div>
             </div>
             <div data-chart="monthly">
                 <div class="skeleton w-full" style="height: 220px"></div>
             </div>
             <details class="mt-4">
-                <summary class="cursor-pointer text-xs text-slate-500 hover:text-slate-300">View as table</summary>
+                <summary class="cursor-pointer text-xs text-muted hover:text-ink-2">View as table</summary>
                 <table class="test-table mt-3" data-table="monthly">
                     <thead><tr><th>Month</th><th>Page views</th><th>Visitors</th></tr></thead>
                     <tbody></tbody>
@@ -55,11 +55,11 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div class="glass-card p-5">
-                <p class="text-sm font-medium text-slate-300 mb-4">Top pages · 30 days</p>
+                <p class="text-sm font-medium text-ink-2 mb-4">Top pages (last 30 days)</p>
                 <ul class="space-y-3" data-list="top_pages"><li><span class="skeleton w-full"></span></li></ul>
             </div>
             <div class="glass-card p-5">
-                <p class="text-sm font-medium text-slate-300 mb-4">Where visitors come from · 30 days</p>
+                <p class="text-sm font-medium text-ink-2 mb-4">Where visitors come from (last 30 days)</p>
                 <ul class="space-y-3" data-list="top_referrers"><li><span class="skeleton w-full"></span></li></ul>
             </div>
         </div>
@@ -70,13 +70,13 @@
     {{-- ===== GITHUB ===== --}}
     <section data-dashboard="github" data-endpoint="{{ route('dashboard.github') }}">
         <div class="mb-5">
-            <h2 class="flex items-center gap-2 text-lg font-semibold text-slate-100">
-                <x-icon-github class="w-5 h-5 text-indigo-400" />
+            <h2 class="flex items-center gap-2 text-lg font-semibold text-ink">
+                <x-icon-github class="w-5 h-5 text-accent" />
                 GitHub Contributions
             </h2>
             <div class="mt-1 flex flex-wrap items-center justify-between gap-2">
-                <p class="text-sm text-slate-400">My GitHub activity over the past year.</p>
-                <a href="https://github.com/{{ config('portfolio.github.username') }}" target="_blank" rel="noopener" class="text-sm text-slate-400 hover:text-indigo-300">&#64;{{ config('portfolio.github.username') }}</a>
+                <p class="text-sm text-ink-2">My GitHub activity over the past year.</p>
+                <a href="https://github.com/{{ config('portfolio.github.username') }}" target="_blank" rel="noopener" class="text-sm text-ink-2 hover:text-accent">&#64;{{ config('portfolio.github.username') }}</a>
             </div>
         </div>
 
@@ -98,7 +98,7 @@
             <div class="heatmap-scroll" data-chart="heatmap">
                 <div class="skeleton w-full" style="height: 110px"></div>
             </div>
-            <div class="mt-3 flex items-center justify-end gap-1.5 text-xs text-slate-500">
+            <div class="mt-3 flex items-center justify-end gap-1.5 text-xs text-muted">
                 Less
                 @for ($level = 0; $level <= 4; $level++)
                     <span class="heat-cell" data-level="{{ $level }}"></span>
@@ -113,9 +113,9 @@
 
         {{-- ===== WAKATIME ===== --}}
         <section data-dashboard="wakatime" data-endpoint="{{ route('dashboard.wakatime') }}">
-            <x-section-heading icon="timer" title="WakaTime Stats" lead="My coding activity over the past 7 days, tracked by the WakaTime editor plugin.">
+            <x-section-heading title="WakaTime Stats" lead="My coding activity over the past 7 days, tracked by the WakaTime editor plugin.">
                 <x-slot:aside>
-                    <span class="text-xs text-slate-500" data-field="updated_at"></span>
+                    <span class="text-xs text-muted" data-field="updated_at"></span>
                 </x-slot:aside>
             </x-section-heading>
 
@@ -130,20 +130,20 @@
                 ] as $t)
                     <div class="stat-tile">
                         <p class="stat-label">{{ $t['label'] }}</p>
-                        <p class="mt-1 text-base font-semibold text-slate-100" data-stat="{{ $t['key'] }}"><span class="skeleton w-32"></span></p>
+                        <p class="mt-1 text-base font-semibold text-ink" data-stat="{{ $t['key'] }}"><span class="skeleton w-32"></span></p>
                     </div>
                 @endforeach
             </div>
 
             <div class="glass-card p-5 mt-4">
-                <p class="text-sm font-medium text-slate-300 mb-4">Languages this week</p>
+                <p class="text-sm font-medium text-ink-2 mb-4">Languages this week</p>
                 <ul class="space-y-3" data-list="languages"><li><span class="skeleton w-full"></span></li></ul>
             </div>
         </section>
     @elseif (app()->environment('local'))
         <hr class="page-divider">
         {{-- Pengingat ini cuma muncul di laptop, gak bakal kelihatan di server --}}
-        <div class="rounded-xl border border-dashed border-amber-500/40 bg-amber-500/5 p-5 text-sm text-amber-200">
+        <div class="rounded-xl border border-dashed border-warn bg-warn-soft p-5 text-sm text-warn">
             <strong>Catatan lokal:</strong> bagian WakaTime disembunyiin karena <code>WAKATIME_API_KEY</code> di .env masih kosong.
         </div>
     @endif

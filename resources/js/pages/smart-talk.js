@@ -18,7 +18,7 @@ function inline(text) {
             fragment.appendChild(strong);
         } else if (part.startsWith('`') && part.endsWith('`') && part.length > 2) {
             const code = document.createElement('code');
-            code.className = 'rounded bg-slate-800 px-1 py-0.5 text-[0.85em]';
+            code.className = 'rounded bg-surface px-1 py-0.5 font-mono text-[0.85em]';
             code.textContent = part.slice(1, -1);
             fragment.appendChild(code);
         } else {
@@ -75,9 +75,9 @@ if (root) {
 
     function aiAvatar() {
         const avatar = document.createElement('div');
-        avatar.className = 'w-8 h-8 shrink-0 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white';
+        avatar.className = 'w-8 h-8 shrink-0 rounded-full bg-accent flex items-center justify-center text-[11px] font-semibold text-accent-ink';
         avatar.setAttribute('aria-hidden', 'true');
-        avatar.textContent = '✦';
+        avatar.textContent = 'AI';
         return avatar;
     }
 

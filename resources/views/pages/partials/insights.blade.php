@@ -1,8 +1,6 @@
 {{-- ==================== ARTICLES & BLOG ==================== --}}
 <div class="mb-20">
-    <h3 class="text-xl font-bold text-slate-100 mb-8 flex items-center gap-2 reveal">
-        <i data-lucide="pen-line" class="w-5 h-5 text-indigo-400"></i>
-        Articles & Blog
+    <h3 class="text-xl font-bold text-ink mb-8 flex items-center gap-2 reveal">Articles & Blog
     </h3>
     
     {{-- Featured Article --}}
@@ -12,35 +10,34 @@
                 <div class="flex flex-col lg:flex-row gap-6">
                     {{-- Article Visual --}}
                     <div class="lg:w-1/3 shrink-0">
-                        <div class="w-full h-48 lg:h-full rounded-xl bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 flex items-center justify-center min-h-[180px]">
+                        <div class="w-full h-48 lg:h-full rounded-xl bg-surface-2 flex items-center justify-center min-h-[180px]">
                             <div class="text-center">
-                                <i data-lucide="book-open" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
-                                <span class="text-white/70 text-sm font-medium">Featured Article</span>
+                                <i data-lucide="book-open" class="w-12 h-12 text-ink mx-auto mb-2"></i>
+                                <span class="text-ink text-sm font-medium">Featured Article</span>
                             </div>
                         </div>
                     </div>
                     {{-- Article Content --}}
                     <div class="flex-1">
                         <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="tag text-xs" style="background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-color: rgba(245, 158, 11, 0.2);">
+                            <span class="tag text-xs">
                                 <i data-lucide="star" class="w-3 h-3 mr-1"></i>
                                 Featured
                             </span>
                             <span class="tag text-xs">
-                                <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
                                 September 2026
                             </span>
                             <span class="tag text-xs">QA Strategy</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">
+                        <h3 class="text-xl font-bold text-ink mb-3 group-hover:text-accent transition-colors">
                             Building a QA Strategy from Scratch: A Guide for Startup Teams
                         </h3>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        <p class="text-sm text-ink-2 leading-relaxed mb-4">
                             How to build an effective quality assurance culture in a fast-paced startup environment? 
                             This article discusses practical steps from determining testing priorities, choosing the right tools, 
-                            to integrating QA into the CI/CD pipeline — without slowing down the development team's velocity.
+                            to integrating QA into the CI/CD pipeline without slowing down the development team's velocity.
                         </p>
-                        <div class="flex items-center gap-2 text-indigo-400 text-sm font-semibold">
+                        <div class="flex items-center gap-2 text-accent text-sm font-semibold">
                             Read Full Article
                             <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
                         </div>
@@ -52,10 +49,7 @@
 
     {{-- Microblog Section --}}
     <div class="max-w-5xl mx-auto reveal">
-        <h4 class="text-lg font-bold text-slate-100 mb-6 flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
-                <i data-lucide="message-square-quote" class="w-4 h-4 text-violet-400"></i>
-            </div>
+        <h4 class="text-lg font-bold text-ink mb-6 flex items-center gap-2">
             Quick Thoughts
         </h4>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -63,14 +57,13 @@
             {{-- Microblog 1 --}}
             <div class="glass-card p-6">
                 <div class="microblog-card pl-6 pt-4">
-                    <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                    <p class="text-sm text-ink-2 leading-relaxed mb-3">
                         Often hear "testing slows down development"? Quite the opposite. 
-                        Testing integrated from the beginning of the sprint <span class="text-indigo-400 font-medium">reduces 60% of rework</span> 
+                        Testing integrated from the beginning of the sprint <span class="font-semibold text-ink">reduces 60% of rework</span> 
                         in the deployment phase. Quality is not a phase, it's a mindset.
                     </p>
                     <div class="flex items-center gap-3">
-                        <span class="text-xs text-slate-500">
-                            <i data-lucide="calendar" class="w-3 h-3 inline mr-1"></i>
+                        <span class="text-xs text-muted">
                             Sep 2026
                         </span>
                         <span class="tag text-xs">Agile QA</span>
@@ -81,15 +74,14 @@
             {{-- Microblog 2 --}}
             <div class="glass-card p-6">
                 <div class="microblog-card pl-6 pt-4">
-                    <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                    <p class="text-sm text-ink-2 leading-relaxed mb-3">
                         Just finished exploring Playwright as a Selenium alternative. 
                         Its auto-wait, built-in assertions, and trace viewer are true 
-                        <span class="text-cyan-400 font-medium">game changers</span> for debugging flaky tests. 
+                        <span class="font-semibold text-ink">game changers</span> for debugging flaky tests. 
                         Highly recommended for new projects!
                     </p>
                     <div class="flex items-center gap-3">
-                        <span class="text-xs text-slate-500">
-                            <i data-lucide="calendar" class="w-3 h-3 inline mr-1"></i>
+                        <span class="text-xs text-muted">
                             Aug 2026
                         </span>
                         <span class="tag text-xs">Tools Review</span>
@@ -102,9 +94,7 @@
 
 {{-- ==================== LEARNING RESOURCES ==================== --}}
 <div class="mb-12">
-    <h3 class="text-xl font-bold text-slate-100 mb-8 flex items-center gap-2 reveal">
-        <i data-lucide="library" class="w-5 h-5 text-cyan-400"></i>
-        Recommended Learning Resources
+    <h3 class="text-xl font-bold text-ink mb-8 flex items-center gap-2 reveal">Recommended Learning Resources
     </h3>
 
     {{-- Resources Grid --}}
@@ -115,15 +105,15 @@
             <div class="glass-card product-card overflow-hidden h-full flex flex-col">
                 {{-- Resource Visual --}}
                 <div class="relative h-48 overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-blue-500 via-indigo-500 to-cyan-600 flex items-center justify-center">
+                    <div class="w-full h-full bg-surface-2 flex items-center justify-center">
                         <div class="text-center">
-                            <i data-lucide="globe" class="w-14 h-14 text-white/80 mx-auto mb-2"></i>
-                            <span class="text-white/70 text-xs font-medium uppercase tracking-wider">Tutorial</span>
+                            <i data-lucide="globe" class="w-14 h-14 text-ink mx-auto mb-2"></i>
+                            <span class="text-ink text-xs font-medium uppercase tracking-wider">Tutorial</span>
                         </div>
                     </div>
                     {{-- Badge --}}
                     <div class="absolute top-3 right-3">
-                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/90 text-white shadow-lg">
+                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-good-soft text-ink">
                             Free
                         </span>
                     </div>
@@ -131,13 +121,13 @@
                 {{-- Resource Info --}}
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Guru99</span>
+                        <span class="w-2 h-2 rounded-full bg-accent"></span>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Guru99</span>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-100 mb-2">
+                    <h3 class="text-lg font-bold text-ink mb-2">
                         Software Testing Tutorial
                     </h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
+                    <p class="text-sm text-ink-2 leading-relaxed mb-5 flex-1">
                         In this comprehensive QA course, you will gain foundational skills and a deep understanding of key Software Testing concepts using real-life examples.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-5">
@@ -158,15 +148,15 @@
             <div class="glass-card product-card overflow-hidden h-full flex flex-col">
                 {{-- Resource Visual --}}
                 <div class="relative h-48 overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-indigo-600 via-blue-600 to-violet-600 flex items-center justify-center">
+                    <div class="w-full h-full bg-surface-2 flex items-center justify-center">
                         <div class="text-center">
-                            <i data-lucide="award" class="w-14 h-14 text-white/80 mx-auto mb-2"></i>
-                            <span class="text-white/70 text-xs font-medium uppercase tracking-wider">Course</span>
+                            <i data-lucide="award" class="w-14 h-14 text-ink mx-auto mb-2"></i>
+                            <span class="text-ink text-xs font-medium uppercase tracking-wider">Course</span>
                         </div>
                     </div>
                     {{-- Badge --}}
                     <div class="absolute top-3 right-3">
-                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-500/90 text-white shadow-lg">
+                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-warn-soft text-ink">
                             Free Trial
                         </span>
                     </div>
@@ -174,13 +164,13 @@
                 {{-- Resource Info --}}
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Coursera</span>
+                        <span class="w-2 h-2 rounded-full bg-accent"></span>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Coursera</span>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-100 mb-2">
+                    <h3 class="text-lg font-bold text-ink mb-2">
                         ISTQB Exams Prep Specialization
                     </h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
+                    <p class="text-sm text-ink-2 leading-relaxed mb-5 flex-1">
                         Master foundational software testing techniques. Gain comprehensive knowledge of testing principles and tools to effectively identify and manage defects. By Board Infinity.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-5">
@@ -201,15 +191,15 @@
             <div class="glass-card product-card overflow-hidden h-full flex flex-col">
                 {{-- Resource Visual --}}
                 <div class="relative h-48 overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 flex items-center justify-center">
+                    <div class="w-full h-full bg-surface-2 flex items-center justify-center">
                         <div class="text-center">
-                            <i data-lucide="book-open" class="w-14 h-14 text-white/80 mx-auto mb-2"></i>
-                            <span class="text-white/70 text-xs font-medium uppercase tracking-wider">E-Book</span>
+                            <i data-lucide="book-open" class="w-14 h-14 text-ink mx-auto mb-2"></i>
+                            <span class="text-ink text-xs font-medium uppercase tracking-wider">E-Book</span>
                         </div>
                     </div>
                     {{-- Badge --}}
                     <div class="absolute top-3 right-3">
-                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/90 text-white shadow-lg">
+                        <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-good-soft text-ink">
                             Free E-Book
                         </span>
                     </div>
@@ -217,13 +207,13 @@
                 {{-- Resource Info --}}
                 <div class="p-6 flex-1 flex flex-col">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Katalon</span>
+                        <span class="w-2 h-2 rounded-full bg-good"></span>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Katalon</span>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-100 mb-2">
+                    <h3 class="text-lg font-bold text-ink mb-2">
                         Manual to Automated Testing
                     </h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
+                    <p class="text-sm text-ink-2 leading-relaxed mb-5 flex-1">
                         Learn the 5 essential steps to shift from manual to automated testing. This guide covers tool selection, key metrics, and strategies for effective test automation.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-5">
@@ -242,20 +232,11 @@
     </div>
 </div>
 
-{{-- ==================== CTA BANNER ==================== --}}
-<div class="max-w-3xl mx-auto mt-16 reveal">
-    <div class="glass-card p-6 sm:p-8 text-center" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.08) 100%);">
-        <i data-lucide="message-square" class="w-8 h-8 text-indigo-400 mx-auto mb-4"></i>
-        <h3 class="text-lg font-bold text-slate-100 mb-2">
-            Want to Discuss QA or Software Testing?
-        </h3>
-        <p class="text-sm text-slate-400 leading-relaxed mb-5 max-w-lg mx-auto">
-            I'm always open to discussing testing strategies, automation tools, or sharing experiences. 
-            Feel free to reach out and connect!
-        </p>
-        <a href="{{ route('contact') }}" class="btn-primary">
-            <i data-lucide="mail" class="w-4 h-4"></i>
-            Get in Touch
-        </a>
-    </div>
+{{-- ==================== AJAKAN NGOBROL ==================== --}}
+<div class="mt-16 pt-8 border-t border-line reveal">
+    <h3 class="text-xl font-semibold text-ink">Want to talk about testing?</h3>
+    <p class="mt-2 text-sm text-ink-2 leading-relaxed max-w-xl">
+        I'm happy to swap notes on test strategy, Playwright, or how you handle QA in a small team.
+    </p>
+    <a href="{{ route('contact') }}" class="btn-outline mt-5">Contact me</a>
 </div>

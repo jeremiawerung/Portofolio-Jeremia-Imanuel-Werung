@@ -53,8 +53,8 @@ if (root) {
 
         const avatar = document.createElement('div');
         avatar.className = message.is_author
-            ? 'w-8 h-8 shrink-0 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-xs font-bold text-white'
-            : 'w-8 h-8 shrink-0 rounded-full bg-slate-700 flex items-center justify-center text-xs font-bold text-slate-200';
+            ? 'w-8 h-8 shrink-0 rounded-full bg-accent flex items-center justify-center text-xs font-semibold text-accent-ink'
+            : 'w-8 h-8 shrink-0 rounded-full bg-surface-2 flex items-center justify-center text-xs font-semibold text-ink-2';
         avatar.textContent = message.name.trim().charAt(0).toUpperCase() || '?';
         avatar.setAttribute('aria-hidden', 'true');
 
@@ -65,19 +65,19 @@ if (root) {
         meta.className = 'flex flex-wrap items-center gap-2 text-xs';
 
         const name = document.createElement('span');
-        name.className = 'font-semibold text-slate-200';
+        name.className = 'font-semibold text-ink';
         name.textContent = message.name;
         meta.appendChild(name);
 
         if (message.is_author) {
             const badge = document.createElement('span');
-            badge.className = 'rounded-full bg-indigo-500/20 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-indigo-200';
+            badge.className = 'rounded bg-accent-soft px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent';
             badge.textContent = 'Author';
             meta.appendChild(badge);
         }
 
         const time = document.createElement('time');
-        time.className = 'text-slate-500';
+        time.className = 'text-muted';
         time.dateTime = message.created_at;
         time.textContent = formatTime(message.created_at);
         meta.appendChild(time);
@@ -85,7 +85,7 @@ if (root) {
         if (isAdmin) {
             const remove = document.createElement('button');
             remove.type = 'button';
-            remove.className = 'text-slate-500 hover:text-rose-400';
+            remove.className = 'text-muted hover:text-bad';
             remove.textContent = 'Delete';
             remove.addEventListener('click', () => deleteMessage(message.id, wrapper));
             meta.appendChild(remove);
@@ -125,9 +125,9 @@ if (root) {
         if (!list.querySelector('[data-id]')) {
             list.replaceChildren();
             const empty = document.createElement('p');
-            empty.className = 'text-center text-sm text-slate-500 py-10';
+            empty.className = 'text-center text-sm text-muted py-10';
             empty.dataset.chatEmpty = '';
-            empty.textContent = 'No messages yet — be the first to say hi! 👋';
+            empty.textContent = 'No messages yet. Be the first to say hi! 👋';
             list.appendChild(empty);
         }
     }
@@ -141,7 +141,7 @@ if (root) {
         } catch {
             list.replaceChildren();
             const failed = document.createElement('p');
-            failed.className = 'text-center text-sm text-slate-500 py-10';
+            failed.className = 'text-center text-sm text-muted py-10';
             failed.textContent = "Couldn't load messages. Please refresh the page.";
             list.appendChild(failed);
         }

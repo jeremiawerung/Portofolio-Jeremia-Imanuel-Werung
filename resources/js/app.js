@@ -316,6 +316,7 @@ if (backToTop) {
 // (cuma dimuat di halaman yang butuh)
 // ============================================
 import './portal';
+import './theme';
 
 const pageModules = {
     dashboard: () => import('./pages/dashboard'),

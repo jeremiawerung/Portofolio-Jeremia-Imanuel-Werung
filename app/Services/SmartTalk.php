@@ -51,7 +51,28 @@ class SmartTalk
             throw new RuntimeException('Jawaban AI kosong');
         }
 
-        return $content;
+        return $this->humanize($content);
+    }
+
+    /**
+     * Model AI suka pakai simbol yang jarang dipakai orang (em dash, en dash,
+     * panah, dst) walaupun udah dilarang di prompt. Diganti di sini biar pasti.
+     */
+    private function humanize(string $text): string
+    {
+        $text = preg_replace('/\s*\x{2014}\s*/u', ', ', $text);   // em dash
+        $text = preg_replace('/\s+\x{2013}\s+/u', ' - ', $text);  // en dash berspasi
+        $text = preg_replace('/\s*\x{2192}\s*/u', ' > ', $text);  // panah
+        $text = preg_replace('/\s+\x{00B7}\s+/u', ', ', $text);   // titik tengah
+
+        return strtr($text, [
+            "\u{2013}" => '-',    // en dash nempel, misal "2025–2026"
+            "\u{2011}" => '-',    // non-breaking hyphen
+            "\u{2010}" => '-',
+            "\u{2026}" => '...',
+            "\u{00A0}" => ' ',
+            "\u{202F}" => ' ',
+        ]);
     }
 
     private function systemPrompt(): string

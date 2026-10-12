@@ -59,6 +59,17 @@ class SmartTalkTest extends TestCase
         });
     }
 
+    public function test_ai_style_symbols_are_replaced_in_replies(): void
+    {
+        Http::fake([
+            'ai.test/*' => Http::response(['choices' => [['message' => ['content' => "Aurora \u{2013} live since 2025\u{2013}2026 \u{2014} hands\u{2011}on QA \u{2192} Playwright\u{2026}"]]]]),
+        ]);
+
+        $this->ask([['role' => 'user', 'content' => 'halo']])
+            ->assertOk()
+            ->assertJsonPath('reply', 'Aurora - live since 2025-2026, hands-on QA > Playwright...');
+    }
+
     public function test_provider_error_is_hidden_from_visitor(): void
     {
         Http::fake(['ai.test/*' => Http::response(['error' => 'invalid key sk-rahasia'], 401)]);

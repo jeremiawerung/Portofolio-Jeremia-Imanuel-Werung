@@ -2,8 +2,8 @@ import { requestJson } from '../lib/http';
 import { hideTooltip, showTooltip } from '../lib/tooltip';
 
 const SERIES = {
-    page_views: { label: 'Page views', color: 'var(--color-series-1)' },
-    visitors: { label: 'Visitors', color: 'var(--color-series-2)' },
+    page_views: { label: 'Page views', color: 'var(--series-1)' },
+    visitors: { label: 'Visitors', color: 'var(--series-2)' },
 };
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -16,7 +16,7 @@ const formatNumber = (value) => (value >= 10000
 
 const formatDate = (iso, options = { month: 'long', day: 'numeric', year: 'numeric' }) => (iso
     ? new Date(`${iso.slice(0, 10)}T00:00:00`).toLocaleDateString('en-US', options)
-    : '—');
+    : '-');
 
 function timeAgo(iso) {
     const seconds = Math.max(0, (Date.now() - new Date(iso).getTime()) / 1000);
@@ -72,9 +72,9 @@ function setText(section, key, text) {
 }
 
 function showFailure(section) {
-    section.querySelectorAll('[data-stat]').forEach((node) => { node.textContent = '—'; });
+    section.querySelectorAll('[data-stat]').forEach((node) => { node.textContent = '-'; });
     section.querySelectorAll('[data-chart], [data-list]').forEach((node) => {
-        node.replaceChildren(el('p', 'text-sm text-slate-500', "Couldn't load this data right now. Please check back later."));
+        node.replaceChildren(el('p', 'text-sm text-muted', "Couldn't load this data right now. Please check back later."));
     });
 }
 
@@ -82,7 +82,7 @@ function showFailure(section) {
 
 function renderMeterList(list, items, { label, value, display, empty }) {
     if (!items.length) {
-        list.replaceChildren(el('li', 'text-sm text-slate-500', empty));
+        list.replaceChildren(el('li', 'text-sm text-muted', empty));
         return;
     }
 
@@ -91,7 +91,7 @@ function renderMeterList(list, items, { label, value, display, empty }) {
     list.replaceChildren(...items.map((item) => {
         const li = el('li');
         const row = el('div', 'flex items-center justify-between gap-3 text-sm mb-1.5');
-        row.append(el('span', 'text-slate-200 truncate', label(item)), el('span', 'text-slate-400 shrink-0', display(item)));
+        row.append(el('span', 'text-ink truncate', label(item)), el('span', 'text-muted shrink-0', display(item)));
 
         const track = el('div', 'meter-track');
         const fill = el('div', 'meter-fill');
@@ -172,7 +172,7 @@ function renderMonthlyChart(container, months) {
     container.replaceChildren(chart, labels);
 
     if (max === 0) {
-        container.appendChild(el('p', 'mt-3 text-center text-xs text-slate-500', 'No traffic recorded yet — the chart fills in as people visit.'));
+        container.appendChild(el('p', 'mt-3 text-center text-xs text-muted', 'No traffic recorded yet. The chart fills in as people visit.'));
     }
 }
 
@@ -325,12 +325,12 @@ function renderGithub(section, data) {
 function renderWakatime(section, data) {
     setText(section, 'start_date', formatDate(data.start_date));
     setText(section, 'end_date', formatDate(data.end_date));
-    setText(section, 'daily_average', data.daily_average || '—');
-    setText(section, 'total_week', data.total_week || '—');
-    setText(section, 'all_time', data.all_time || '—');
+    setText(section, 'daily_average', data.daily_average || '-');
+    setText(section, 'total_week', data.total_week || '-');
+    setText(section, 'all_time', data.all_time || '-');
     setText(section, 'best_day', data.best_day?.date
         ? `${formatDate(data.best_day.date)} (${data.best_day.text})`
-        : '—');
+        : '-');
 
     const updated = section.querySelector('[data-field="updated_at"]');
     if (updated) updated.textContent = `Last update: ${timeAgo(data.updated_at)}`;
@@ -338,7 +338,7 @@ function renderWakatime(section, data) {
     renderMeterList(section.querySelector('[data-list="languages"]'), data.languages, {
         label: (item) => item.name,
         value: (item) => item.percent,
-        display: (item) => `${item.text} · ${item.percent}%`,
+        display: (item) => `${item.text} (${item.percent}%)`,
         empty: 'No coding activity recorded this week.',
     });
 }

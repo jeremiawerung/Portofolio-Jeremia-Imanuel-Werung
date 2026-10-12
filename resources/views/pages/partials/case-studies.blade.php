@@ -7,26 +7,22 @@
 
         {{-- Case Study Header --}}
         <div class="flex flex-col sm:flex-row items-start gap-5 mb-6">
-            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 via-rose-500 to-purple-600 flex items-center justify-center shadow-lg shadow-pink-500/20 shrink-0">
-                <i data-lucide="scissors" class="w-7 h-7 text-white"></i>
-            </div>
             <div class="flex-1">
                 <div class="flex flex-wrap items-center gap-3 mb-2">
-                    <span class="tag" style="background: rgba(236, 72, 153, 0.1); color: #f472b6; border-color: rgba(236, 72, 153, 0.2);">
+                    <span class="tag">
                         Academic Project
                     </span>
                     <span class="tag">
-                        <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
-                        2025 – 2026
+                        2025 - 2026
                     </span>
                 </div>
-                <h3 class="text-xl font-bold text-slate-100 mb-2">
+                <h3 class="text-xl font-bold text-ink mb-2">
                     Sistem Reservasi Aurora Beauty Salon
                 </h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
+                <p class="text-sm text-ink-2 leading-relaxed">
                     Web-based reservation information system with a two-stage transaction flow: 
-                    <span class="text-indigo-400 font-medium">50% down payment (DP)</span> upon booking, 
-                    and <span class="text-indigo-400 font-medium">final payment</span> after the service is completed. 
+                    <span class="font-semibold text-ink">50% down payment (DP)</span> upon booking, 
+                    and <span class="font-semibold text-ink">final payment</span> after the service is completed. 
                     Each payment stage undergoes admin verification, and customers must check-in upon arrival 
                     at the salon before the service begins.
                 </p>
@@ -34,19 +30,16 @@
         </div>
 
         {{-- Technical Insight --}}
-        <div class="glass-card p-5 mb-8 reveal" style="background: rgba(99, 102, 241, 0.05);">
+        <div class="glass-card p-5 mb-8 reveal">
             <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                    <i data-lucide="info" class="w-4 h-4 text-indigo-400"></i>
-                </div>
                 <div>
-                    <p class="text-xs text-slate-500 leading-relaxed">
+                    <p class="text-xs text-muted leading-relaxed">
                         <i data-lucide="cpu" class="w-3 h-3 inline mr-1"></i>
-                        <span class="text-slate-400 font-medium">Technical Insight:</span>
-                        Based on the <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">users</code> 
-                        table structure (columns <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">two_factor_secret</code>, 
-                        <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">remember_token</code>), 
-                        this system is built on Laravel with Jetstream/Fortify auth scaffolding — highly relevant for testing cookie-based sessions and 2FA features.
+                        <span class="text-ink-2 font-medium">Technical Insight:</span>
+                        Based on the <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">users</code> 
+                        table structure (columns <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">two_factor_secret</code>, 
+                        <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">remember_token</code>), 
+                        this system is built on Laravel with Jetstream/Fortify auth scaffolding, which is highly relevant for testing cookie-based sessions and 2FA features.
                     </p>
                 </div>
             </div>
@@ -54,110 +47,103 @@
 
         {{-- ===== USER STORIES ===== --}}
         <div class="mb-8 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center">
-                    <i data-lucide="user-check" class="w-4 h-4 text-indigo-400"></i>
-                </div>
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
                 User Stories
             </h4>
 
-            <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="user" class="w-3.5 h-3.5 text-pink-400"></i>
-                As a Customer
+            <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">As a Customer
             </h5>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P01</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">register and login</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">register and login</span> 
                         so that I can access the reservation services.
                     </p>
                 </div>
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P02</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">view the service list</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">view the service list</span> 
                         so that I can choose the desired treatment.
                     </p>
                 </div>
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P03</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">check my reservation history</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">check my reservation history</span> 
                         so that I know my past bookings status.
                     </p>
                 </div>
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P04</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">select a service and time slot</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">select a service and time slot</span> 
                         so that my reservation fits my schedule.
                     </p>
                 </div>
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P05</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">pay a 50% down payment</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">pay a 50% down payment</span> 
                         so that my reservation is confirmed without full upfront payment.
                     </p>
                 </div>
                 <div class="glass-card p-4">
                     <span class="tag text-xs mb-2 inline-flex">US-P06</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">check-in upon arrival at the salon</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">check-in upon arrival at the salon</span> 
                         so that the admin knows I've arrived on time.
                     </p>
                 </div>
                 <div class="glass-card p-4 md:col-span-2">
                     <span class="tag text-xs mb-2 inline-flex">US-P07</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-indigo-400 font-medium">As a</span> customer,
-                        I want to <span class="text-cyan-400 font-medium">complete the final payment after the service is done</span> 
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As a</span> customer,
+                        I want to <span class="font-semibold text-ink">complete the final payment after the service is done</span> 
                         so that my transaction is settled.
                     </p>
                 </div>
             </div>
 
-            <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="shield" class="w-3.5 h-3.5 text-violet-400"></i>
-                As an Admin
+            <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">As an Admin
             </h5>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="glass-card p-4">
-                    <span class="tag text-xs mb-2 inline-flex" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">US-A01</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-violet-400 font-medium">As an</span> admin,
-                        I want to <span class="text-cyan-400 font-medium">verify down payments and final payments</span> 
+                    <span class="tag text-xs mb-2 inline-flex">US-A01</span>
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As an</span> admin,
+                        I want to <span class="font-semibold text-ink">verify down payments and final payments</span> 
                         so that no fraudulent transactions pass through.
                     </p>
                 </div>
                 <div class="glass-card p-4">
-                    <span class="tag text-xs mb-2 inline-flex" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">US-A02</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-violet-400 font-medium">As an</span> admin,
-                        I want to <span class="text-cyan-400 font-medium">confirm customer arrivals</span> 
+                    <span class="tag text-xs mb-2 inline-flex">US-A02</span>
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As an</span> admin,
+                        I want to <span class="font-semibold text-ink">confirm customer arrivals</span> 
                         so that services are only provided to legitimate customers.
                     </p>
                 </div>
                 <div class="glass-card p-4">
-                    <span class="tag text-xs mb-2 inline-flex" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">US-A03</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-violet-400 font-medium">As an</span> admin,
-                        I want to <span class="text-cyan-400 font-medium">view transaction reports</span> 
+                    <span class="tag text-xs mb-2 inline-flex">US-A03</span>
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As an</span> admin,
+                        I want to <span class="font-semibold text-ink">view transaction reports</span> 
                         to monitor business performance.
                     </p>
                 </div>
                 <div class="glass-card p-4">
-                    <span class="tag text-xs mb-2 inline-flex" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">US-A04</span>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        <span class="text-violet-400 font-medium">As an</span> admin,
-                        I want to <span class="text-cyan-400 font-medium">manage service data, time slots, and customer accounts</span> 
+                    <span class="tag text-xs mb-2 inline-flex">US-A04</span>
+                    <p class="text-sm text-ink-2 leading-relaxed">
+                        <span class="font-semibold text-ink">As an</span> admin,
+                        I want to <span class="font-semibold text-ink">manage service data, time slots, and customer accounts</span> 
                         so that system information is always accurate.
                     </p>
                 </div>
@@ -166,32 +152,26 @@
 
         {{-- ===== DIAGRAMS ===== --}}
         <div class="mb-8 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center">
-                    <i data-lucide="git-branch" class="w-4 h-4 text-cyan-400"></i>
-                </div>
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
                 Use Case Diagram
             </h4>
-            <div class="glass-card p-6 flex justify-center bg-slate-900/50">
-                <img src="{{ asset('images/usecase-diagram-aurora-beauty-salon.png') }}" alt="Use Case Diagram Aurora Beauty Salon" loading="lazy" decoding="async" class="max-w-full rounded-lg shadow-lg border border-slate-700/50">
+            <div class="glass-card p-6 flex justify-center bg-surface-2">
+                <img src="{{ asset('images/usecase-diagram-aurora-beauty-salon.png') }}" alt="Use Case Diagram Aurora Beauty Salon" loading="lazy" decoding="async" class="max-w-full rounded-lg border border-line">
             </div>
         </div>
 
         <div class="mb-8 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
-                    <i data-lucide="workflow" class="w-4 h-4 text-violet-400"></i>
-                </div>
-                Activity Diagram — Main Business Flow
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+                Activity Diagram: Main Business Flow
             </h4>
-            <div class="glass-card p-6 flex justify-center bg-slate-900/50">
-                <img src="{{ asset('images/activity-diagram-aurora-beauty-salon.png') }}" alt="Activity Diagram Aurora Beauty Salon" loading="lazy" decoding="async" class="max-w-full rounded-lg shadow-lg border border-slate-700/50">
+            <div class="glass-card p-6 flex justify-center bg-surface-2">
+                <img src="{{ asset('images/activity-diagram-aurora-beauty-salon.png') }}" alt="Activity Diagram Aurora Beauty Salon" loading="lazy" decoding="async" class="max-w-full rounded-lg border border-line">
             </div>
-            <div class="glass-card p-4 mt-4" style="background: rgba(99, 102, 241, 0.05);">
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    <span class="text-indigo-400 font-medium">Employee Role Note:</span>
+            <div class="glass-card p-4 mt-4">
+                <p class="text-xs text-ink-2 leading-relaxed">
+                    <span class="font-semibold text-ink">Employee Role Note:</span>
                     Employees do not appear as system actors in the Use Case Diagram (likely not accessing the system directly), 
-                    but they play a crucial role in the real business process — preparing tools/materials and executing services. 
+                    but they play a crucial role in the real business process: preparing tools/materials and executing services. 
                     This is important for QA: validating that the "service provided" status in the system truly synchronizes with actual conditions on the ground.
                 </p>
             </div>
@@ -199,30 +179,27 @@
 
         {{-- ===== MANUAL TESTING: AURORA ===== --}}
         <div class="mb-8 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                    <i data-lucide="clipboard-check" class="w-4 h-4 text-emerald-400"></i>
-                </div>
-                Manual Testing — Black Box Testing
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+                Manual Testing: Black Box Testing
             </h4>
 
             {{-- Stats --}}
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-indigo-400">49</div>
-                    <div class="text-xs text-slate-400 mt-1">Test Cases</div>
+                    <div class="text-2xl font-bold text-accent">49</div>
+                    <div class="text-xs text-ink-2 mt-1">Test Cases</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-emerald-400">100%</div>
-                    <div class="text-xs text-slate-400 mt-1">Pass Rate</div>
+                    <div class="text-2xl font-bold text-good">100%</div>
+                    <div class="text-xs text-ink-2 mt-1">Pass Rate</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-violet-400">3</div>
-                    <div class="text-xs text-slate-400 mt-1">Modules</div>
+                    <div class="text-2xl font-bold text-accent">3</div>
+                    <div class="text-xs text-ink-2 mt-1">Modules</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-cyan-400">5</div>
-                    <div class="text-xs text-slate-400 mt-1">Testers</div>
+                    <div class="text-2xl font-bold text-accent">5</div>
+                    <div class="text-xs text-ink-2 mt-1">Testers</div>
                 </div>
             </div>
 
@@ -241,30 +218,30 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="font-medium text-slate-200">A. Authentication & Security</td>
+                                <td class="font-medium text-ink">A. Authentication & Security</td>
                                 <td class="text-center">13</td>
-                                <td class="text-center text-emerald-400">13 × 5 = 65</td>
+                                <td class="text-center text-good">13 × 5 = 65</td>
                                 <td class="text-center">0</td>
                                 <td class="text-center"><span class="status-pass font-mono text-xs">100%</span></td>
                             </tr>
                             <tr>
-                                <td class="font-medium text-slate-200">B. Admin</td>
+                                <td class="font-medium text-ink">B. Admin</td>
                                 <td class="text-center">18</td>
-                                <td class="text-center text-emerald-400">18 × 5 = 90</td>
+                                <td class="text-center text-good">18 × 5 = 90</td>
                                 <td class="text-center">0</td>
                                 <td class="text-center"><span class="status-pass font-mono text-xs">100%</span></td>
                             </tr>
                             <tr>
-                                <td class="font-medium text-slate-200">C. Customer</td>
+                                <td class="font-medium text-ink">C. Customer</td>
                                 <td class="text-center">18</td>
-                                <td class="text-center text-emerald-400">18 × 5 = 90</td>
+                                <td class="text-center text-good">18 × 5 = 90</td>
                                 <td class="text-center">0</td>
                                 <td class="text-center"><span class="status-pass font-mono text-xs">100%</span></td>
                             </tr>
-                            <tr class="border-t-2 border-slate-600">
-                                <td class="font-bold text-slate-100">TOTAL</td>
-                                <td class="text-center font-bold text-slate-100">49</td>
-                                <td class="text-center font-bold text-emerald-400">245</td>
+                            <tr class="border-t-2 border-line">
+                                <td class="font-bold text-ink">TOTAL</td>
+                                <td class="text-center font-bold text-ink">49</td>
+                                <td class="text-center font-bold text-good">245</td>
                                 <td class="text-center font-bold">0</td>
                                 <td class="text-center"><span class="status-pass font-mono text-xs font-bold">100%</span></td>
                             </tr>
@@ -272,17 +249,15 @@
                     </table>
                 </div>
             </div>
-            <div class="glass-card p-3 mb-6" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.15);">
-                <p class="text-xs text-slate-400 text-center">
-                    <i data-lucide="check-circle" class="w-3 h-3 inline mr-1 text-emerald-400"></i>
-                    System declared <span class="text-emerald-400 font-bold">Valid for Implementation</span> — 100% scenarios matched across all modules
+            <div class="glass-card p-3 mb-6">
+                <p class="text-xs text-ink-2 text-center">
+                    <i data-lucide="check-circle" class="w-3 h-3 inline mr-1 text-good"></i>
+                    System declared <span class="text-good font-bold">Valid for Implementation</span>: 100% scenarios matched across all modules
                 </p>
             </div>
 
             {{-- Sample Test Cases --}}
-            <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="table" class="w-4 h-4 text-indigo-400"></i>
-                Sample Test Cases (Authentication Module)
+            <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Sample Test Cases (Authentication Module)
             </h5>
             <div class="glass-card overflow-hidden mb-4">
                 <div class="overflow-x-auto">
@@ -297,26 +272,26 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">1</td>
-                                <td>Customer Registration (Valid & Verified) — Fill complete form → Submit</td>
+                                <td class="font-mono text-accent whitespace-nowrap">1</td>
+                                <td>Customer Registration (Valid & Verified): Fill complete form > Submit</td>
                                 <td>"Email Verifikasi Terkirim" notification appears & user receives verification email</td>
                                 <td><span class="status-pass font-mono text-xs">PASS</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">2</td>
-                                <td>Customer Registration (Duplicate Email) — Register with an already-used email</td>
+                                <td class="font-mono text-accent whitespace-nowrap">2</td>
+                                <td>Customer Registration (Duplicate Email): Register with an already-used email</td>
                                 <td>System rejects registration and shows "Email sudah terdaftar" message</td>
                                 <td><span class="status-pass font-mono text-xs">PASS</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">3</td>
-                                <td>Customer Login (Valid Credentials) — Enter valid email & password → Click login</td>
+                                <td class="font-mono text-accent whitespace-nowrap">3</td>
+                                <td>Customer Login (Valid Credentials): Enter valid email & password > Click login</td>
                                 <td>Redirected to customer dashboard</td>
                                 <td><span class="status-pass font-mono text-xs">PASS</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">4</td>
-                                <td>Customer Login (Invalid Password) — Enter valid email with wrong password</td>
+                                <td class="font-mono text-accent whitespace-nowrap">4</td>
+                                <td>Customer Login (Invalid Password): Enter valid email with wrong password</td>
                                 <td>Error message displayed, stays on login page</td>
                                 <td><span class="status-pass font-mono text-xs">PASS</span></td>
                             </tr>
@@ -333,17 +308,14 @@
 
         {{-- ===== AUTOMATION TESTING: AURORA ===== --}}
         <div class="mb-8 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center">
-                    <i data-lucide="bot" class="w-4 h-4 text-cyan-400"></i>
-                </div>
-                Automation Testing — Playwright + Page Object Model
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+                Automation Testing: Playwright + Page Object Model
             </h4>
-            <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                E2E automation covering the <span class="text-indigo-400 font-medium">Main Menu flow</span>
+            <p class="text-sm text-ink-2 leading-relaxed mb-4">
+                E2E automation covering the <span class="font-semibold text-ink">Main Menu flow</span>
                 (guest/customer navigation, language switcher, profile sidebar panel, AJAX-driven Home page)
-                plus <span class="text-indigo-400 font-medium">Registration, Login, and a full
-                Booking → Payment flow</span> against a real Midtrans Sandbox integration. Built with
+                plus <span class="font-semibold text-ink">Registration, Login, and a full
+                Booking > Payment flow</span> against a real Midtrans Sandbox integration. Built with
                 Playwright using the Page Object Model pattern and a dedicated, idempotent test account
                 so runs never touch real customer data.
             </p>
@@ -351,20 +323,20 @@
             {{-- Stats --}}
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-indigo-400">51</div>
-                    <div class="text-xs text-slate-400 mt-1">Test Cases</div>
+                    <div class="text-2xl font-bold text-accent">51</div>
+                    <div class="text-xs text-ink-2 mt-1">Test Cases</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-emerald-400">11</div>
-                    <div class="text-xs text-slate-400 mt-1">Scenario Groups</div>
+                    <div class="text-2xl font-bold text-good">11</div>
+                    <div class="text-xs text-ink-2 mt-1">Scenario Groups</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-violet-400">3</div>
-                    <div class="text-xs text-slate-400 mt-1">New Flows: Register, Login, Booking+Pay</div>
+                    <div class="text-2xl font-bold text-accent">3</div>
+                    <div class="text-xs text-ink-2 mt-1">New Flows: Register, Login, Booking+Pay</div>
                 </div>
                 <div class="glass-card p-4 text-center">
-                    <div class="text-2xl font-bold text-cyan-400">Real</div>
-                    <div class="text-xs text-slate-400 mt-1">Midtrans Sandbox Integration</div>
+                    <div class="text-2xl font-bold text-accent">Real</div>
+                    <div class="text-xs text-ink-2 mt-1">Midtrans Sandbox Integration</div>
                 </div>
             </div>
 
@@ -381,63 +353,63 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="font-mono text-indigo-400">A</td>
+                                <td class="font-mono text-accent">A</td>
                                 <td>Main menu navigation (guest)</td>
                                 <td class="text-center">5</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">B</td>
+                                <td class="font-mono text-accent">B</td>
                                 <td>Language switcher (ID/EN)</td>
                                 <td class="text-center">6</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">C</td>
+                                <td class="font-mono text-accent">C</td>
                                 <td>Guest vs. logged-in customer state</td>
                                 <td class="text-center">4</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">D</td>
+                                <td class="font-mono text-accent">D</td>
                                 <td>Profile sidebar panel & logout confirmation</td>
                                 <td class="text-center">10</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">E</td>
+                                <td class="font-mono text-accent">E</td>
                                 <td>Service search (autocomplete)</td>
                                 <td class="text-center">8</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">F</td>
+                                <td class="font-mono text-accent">F</td>
                                 <td>Service category grid (AJAX)</td>
                                 <td class="text-center">3</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">G</td>
+                                <td class="font-mono text-accent">G</td>
                                 <td>"Experience" gallery (AJAX)</td>
                                 <td class="text-center">1</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400">H</td>
+                                <td class="font-mono text-accent">H</td>
                                 <td>Recommendation carousel (AJAX)</td>
                                 <td class="text-center">3</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-cyan-400">I</td>
+                                <td class="font-mono text-accent">I</td>
                                 <td>Customer registration (real form + validation)</td>
                                 <td class="text-center">5</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-cyan-400">J</td>
+                                <td class="font-mono text-accent">J</td>
                                 <td>Customer login (valid/invalid credentials, unverified account)</td>
                                 <td class="text-center">4</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-cyan-400">K</td>
-                                <td>End-to-end: register → verify → login → book → pay (Midtrans Sandbox) → history</td>
+                                <td class="font-mono text-accent">K</td>
+                                <td>End-to-end: register > verify > login > book > pay (Midtrans Sandbox) > history</td>
                                 <td class="text-center">2</td>
                             </tr>
-                            <tr class="border-t-2 border-slate-600">
-                                <td class="font-bold text-slate-100" colspan="2">TOTAL</td>
-                                <td class="text-center font-bold text-emerald-400">51</td>
+                            <tr class="border-t-2 border-line">
+                                <td class="font-bold text-ink" colspan="2">TOTAL</td>
+                                <td class="text-center font-bold text-good">51</td>
                             </tr>
                         </tbody>
                     </table>
@@ -445,35 +417,30 @@
             </div>
 
             {{-- Approach callout --}}
-            <div class="glass-card p-5 mb-6" style="background: rgba(6, 182, 212, 0.05); border-color: rgba(6, 182, 212, 0.15);">
+            <div class="glass-card p-5 mb-6">
                 <div class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <i data-lucide="layers" class="w-4 h-4 text-cyan-400"></i>
-                    </div>
-                    <div class="text-xs text-slate-400 leading-relaxed space-y-1.5">
-                        <p><span class="text-cyan-400 font-medium">Page Object Model</span> — every locator lives once in <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">pages/</code>, reused across all test files.</p>
-                        <p><span class="text-cyan-400 font-medium">Reused login session</span> — customer login runs once in <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">auth.setup.js</code>, saved as Playwright <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">storageState</code> and reused by every test that needs an authenticated customer.</p>
-                        <p><span class="text-cyan-400 font-medium">Isolated test data</span> — a dedicated, idempotent customer account is seeded via a PHP script that never touches real customer rows.</p>
-                        <p><span class="text-cyan-400 font-medium">DOM-based assertions</span> — checks like "grid finished loading" assert on element structure/count, not on placeholder text, so tests don't break when the active language changes.</p>
-                        <p><span class="text-cyan-400 font-medium">Self-cleaning test data</span> — registration and full-flow tests create a uniquely-emailed account per run and delete it in <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">afterEach</code> via a small PHP helper, so the dev database never accumulates leftover test accounts.</p>
+                    <div class="text-xs text-ink-2 leading-relaxed space-y-1.5">
+                        <p><span class="font-semibold text-ink">Page Object Model</span>: every locator lives once in <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">pages/</code>, reused across all test files.</p>
+                        <p><span class="font-semibold text-ink">Reused login session</span>: customer login runs once in <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">auth.setup.js</code>, saved as Playwright <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">storageState</code> and reused by every test that needs an authenticated customer.</p>
+                        <p><span class="font-semibold text-ink">Isolated test data</span>: a dedicated, idempotent customer account is seeded via a PHP script that never touches real customer rows.</p>
+                        <p><span class="font-semibold text-ink">DOM-based assertions</span>: checks like "grid finished loading" assert on element structure/count, not on placeholder text, so tests don't break when the active language changes.</p>
+                        <p><span class="font-semibold text-ink">Self-cleaning test data</span>: registration and full-flow tests create a uniquely-emailed account per run and delete it in <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">afterEach</code> via a small PHP helper, so the dev database never accumulates leftover test accounts.</p>
                     </div>
                 </div>
             </div>
 
             {{-- Code: Page Object --}}
             <div class="mb-4">
-                <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                    <i data-lucide="code-2" class="w-4 h-4 text-indigo-400"></i>
-                    Page Object — Main Menu
+                <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Page Object: Main Menu
                 </h5>
                 <div class="code-block">
                     <div class="code-block-header">
                         <div class="code-block-dots">
-                            <span style="background: #ef4444;"></span>
-                            <span style="background: #f59e0b;"></span>
-                            <span style="background: #22c55e;"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <span class="text-xs text-slate-500 font-mono">e2e/pages/MainMenuPage.js</span>
+                        <span class="text-xs text-muted font-mono">e2e/pages/MainMenuPage.js</span>
                     </div>
                     <div class="code-block-body"><span class="code-keyword">import</span> { expect } <span class="code-keyword">from</span> <span class="code-string">'@playwright/test'</span>;
 
@@ -512,18 +479,16 @@
 
             {{-- Code: Search autocomplete test --}}
             <div class="mb-6">
-                <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                    <i data-lucide="code-2" class="w-4 h-4 text-cyan-400"></i>
-                    Test — Service Search Autocomplete (Debounce Edge Case)
+                <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Test: Service Search Autocomplete (Debounce Edge Case)
                 </h5>
                 <div class="code-block">
                     <div class="code-block-header">
                         <div class="code-block-dots">
-                            <span style="background: #ef4444;"></span>
-                            <span style="background: #f59e0b;"></span>
-                            <span style="background: #22c55e;"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <span class="text-xs text-slate-500 font-mono">e2e/ui/home-search-ui.e2e.test.js</span>
+                        <span class="text-xs text-muted font-mono">e2e/ui/home-search-ui.e2e.test.js</span>
                     </div>
                     <div class="code-block-body"><span class="code-keyword">import</span> { expect, test } <span class="code-keyword">from</span> <span class="code-string">'@playwright/test'</span>;
 <span class="code-keyword">import</span> { HomePage } <span class="code-keyword">from</span> <span class="code-string">'../pages/HomePage.js'</span>;
@@ -548,23 +513,20 @@
             </div>
 
             {{-- Extended coverage: booking + payment --}}
-            <div class="glass-card p-5 mb-6" style="background: rgba(139, 92, 246, 0.05); border-color: rgba(139, 92, 246, 0.15);">
+            <div class="glass-card p-5 mb-6">
                 <div class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <i data-lucide="credit-card" class="w-4 h-4 text-violet-400"></i>
-                    </div>
-                    <div class="text-xs text-slate-400 leading-relaxed space-y-1.5">
-                        <p class="text-slate-300 font-medium">Newest coverage: full Booking → Payment E2E (Group K)</p>
+                    <div class="text-xs text-ink-2 leading-relaxed space-y-1.5">
+                        <p class="text-ink-2 font-medium">Newest coverage: full Booking > Payment E2E (Group K)</p>
                         <p>The suite now drives the entire funnel with a single, disposable test account:
-                        <span class="text-violet-400 font-medium">register → verify email (via DB) → login → pick a
-                        category & service → choose a schedule → checkout → pay → success page → booking history</span>,
-                        asserting the final reservation shows up as <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">is_lunas: true</code>.</p>
-                        <p><span class="text-violet-400 font-medium">Payment strategy:</span> the app's Midtrans integration runs on real
+                        <span class="font-semibold text-ink">register > verify email (via DB) > login > pick a
+                        category & service > choose a schedule > checkout > pay > success page > booking history</span>,
+                        asserting the final reservation shows up as <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">is_lunas: true</code>.</p>
+                        <p><span class="font-semibold text-ink">Payment strategy:</span> the app's Midtrans integration runs on real
                         sandbox credentials. The test captures the Snap token from the app's own
-                        <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">/booking/midtrans/proses</code> endpoint, waits for the
-                        genuine Snap iframe to open and asserts it's served from <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">sandbox.midtrans.com</code>
-                        — proving the integration is really wired up — then completes the transaction by calling
-                        <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">/booking/midtrans/callback</code> directly, the same endpoint Snap.js's
+                        <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">/booking/midtrans/proses</code> endpoint, waits for the
+                        genuine Snap iframe to open and asserts it's served from <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">sandbox.midtrans.com</code>
+                        (proving the integration is really wired up), then completes the transaction by calling
+                        <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">/booking/midtrans/callback</code> directly, the same endpoint Snap.js's
                         own success callback calls in production. Snap's payment-method UI is a third-party
                         widget that renders non-deterministically between runs, so this still exercises the
                         app's real backend logic (validation, status update, response) without depending on
@@ -574,18 +536,16 @@
             </div>
 
             <div class="mb-6">
-                <h5 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                    <i data-lucide="code-2" class="w-4 h-4 text-violet-400"></i>
-                    Test — Booking → Payment E2E (Midtrans Sandbox)
+                <h5 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Test: Booking > Payment E2E (Midtrans Sandbox)
                 </h5>
                 <div class="code-block">
                     <div class="code-block-header">
                         <div class="code-block-dots">
-                            <span style="background: #ef4444;"></span>
-                            <span style="background: #f59e0b;"></span>
-                            <span style="background: #22c55e;"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <span class="text-xs text-slate-500 font-mono">e2e/ui/booking-payment-flow-ui.e2e.test.js</span>
+                        <span class="text-xs text-muted font-mono">e2e/ui/booking-payment-flow-ui.e2e.test.js</span>
                     </div>
                     <div class="code-block-body"><span class="code-func">test</span>(<span class="code-string">'should mendaftar akun baru, login, booking layanan, bayar lunas, dan tercatat di riwayat'</span>, <span class="code-keyword">async</span> ({ <span class="code-param">page</span> }) => {
   test.<span class="code-func">setTimeout</span>(<span class="code-param">120_000</span>); <span class="code-comment">// registrasi kirim email asli + menunggu popup Snap sandbox</span>
@@ -617,21 +577,18 @@
             </div>
 
             {{-- QA finding note --}}
-            <div class="glass-card p-5 mb-6" style="background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.15);">
+            <div class="glass-card p-5 mb-6">
                 <div class="flex items-start gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <i data-lucide="search-check" class="w-4 h-4 text-amber-400"></i>
-                    </div>
                     <div>
-                        <p class="text-xs text-slate-500 leading-relaxed">
-                            <span class="text-slate-300 font-medium">Finding — test assumption vs. product bug:</span>
+                        <p class="text-xs text-muted leading-relaxed">
+                            <span class="text-ink-2 font-medium">Finding: test assumption vs. product bug:</span>
                             on the first run, 2 of 41 tests failed. Investigation showed
-                            <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">config/app.php</code>
-                            hardcodes <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">'locale' => 'id'</code>
-                            instead of reading <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">env('APP_LOCALE')</code>,
-                            so the app always defaults to Indonesian regardless of <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">.env</code>.
-                            The app's own behavior was consistent — only my test's expectation was wrong. Fixed on the test
-                            side with a single <code class="text-xs bg-slate-800 px-1.5 py-0.5 rounded font-mono text-cyan-400">DEFAULT_LOCALE</code>
+                            <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">config/app.php</code>
+                            hardcodes <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">'locale' => 'id'</code>
+                            instead of reading <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">env('APP_LOCALE')</code>,
+                            so the app always defaults to Indonesian regardless of <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">.env</code>.
+                            The app's own behavior was consistent. Only my test's expectation was wrong. Fixed on the test
+                            side with a single <code class="text-xs bg-surface-2 px-1.5 py-0.5 rounded font-mono text-ink">DEFAULT_LOCALE</code>
                             constant, without touching application code, and reported the distinction explicitly.
                         </p>
                     </div>
@@ -645,40 +602,34 @@
         </div>
 
         {{-- ===== QA LEARNINGS ===== --}}
-        <div class="pt-6 border-t border-slate-700/50 reveal">
-            <h4 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center">
-                    <i data-lucide="lightbulb" class="w-4 h-4 text-amber-400"></i>
-                </div>
+        <div class="pt-6 border-t border-line reveal">
+            <h4 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
                 QA Learnings & Notes
             </h4>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="glass-card p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <i data-lucide="credit-card" class="w-4 h-4 text-cyan-400"></i>
-                        <h5 class="text-sm font-bold text-slate-200">State Inconsistency</h5>
+                        <h5 class="text-sm font-bold text-ink">State Inconsistency</h5>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        The two-stage payment flow (DP → Final) is prone to state inconsistency if admin verification is missed 
-                        — crucial to ensure reservation status cannot "skip" to the next phase.
+                    <p class="text-xs text-ink-2 leading-relaxed">
+                        The two-stage payment flow (DP > Final) is prone to state inconsistency if admin verification is missed.
+                        That is crucial to ensure reservation status cannot "skip" to the next phase.
                     </p>
                 </div>
                 <div class="glass-card p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <i data-lucide="users" class="w-4 h-4 text-violet-400"></i>
-                        <h5 class="text-sm font-bold text-slate-200">Employee Involvement</h5>
+                        <h5 class="text-sm font-bold text-ink">Employee Involvement</h5>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Employees are not system actors, so validating "service provided" relies on manual admin/system input 
-                        — a critical point worth testing with negative scenarios.
+                    <p class="text-xs text-ink-2 leading-relaxed">
+                        Employees are not system actors, so validating "service provided" relies on manual admin/system input,
+                        which is a critical point worth testing with negative scenarios.
                     </p>
                 </div>
                 <div class="glass-card p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <i data-lucide="git-pull-request" class="w-4 h-4 text-emerald-400"></i>
-                        <h5 class="text-sm font-bold text-slate-200">Double Booking</h5>
+                        <h5 class="text-sm font-bold text-ink">Double Booking</h5>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
+                    <p class="text-xs text-ink-2 leading-relaxed">
                         Double booking prevention on time slots is a critical area, especially for concurrent request 
                         scenarios (two customers booking the same slot simultaneously).
                     </p>
@@ -691,33 +642,29 @@
 
 
     {{-- =====================================================================
-         CASE STUDY 2: Task Module — Test Case & Bug Report
+         CASE STUDY 2: Task Module: Test Case & Bug Report
          ===================================================================== --}}
     <div class="glass-card p-6 sm:p-8 reveal">
 
         {{-- Header --}}
         <div class="flex flex-col sm:flex-row items-start gap-5 mb-6">
-            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/20 shrink-0">
-                <i data-lucide="list-todo" class="w-7 h-7 text-white"></i>
-            </div>
             <div class="flex-1">
                 <div class="flex flex-wrap items-center gap-3 mb-2">
-                    <span class="tag" style="background: rgba(99, 102, 241, 0.1); color: #818cf8; border-color: rgba(99, 102, 241, 0.2);">
+                    <span class="tag">
                         QA Assessment
                     </span>
                     <span class="tag">
-                        <i data-lucide="calendar" class="w-3 h-3 mr-1"></i>
                         February 2026
                     </span>
                 </div>
-                <h3 class="text-xl font-bold text-slate-100 mb-2">
-                    Task Module — Manual Testing & Bug Report
+                <h3 class="text-xl font-bold text-ink mb-2">
+                    Task Module: Manual Testing & Bug Report
                 </h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
+                <p class="text-sm text-ink-2 leading-relaxed">
                     QA testing on a Task management module covering CRUD operations, form validation,
                     notification systems, and filter functionality. Discovered
-                    <span class="text-rose-400 font-medium">15 bugs</span> including
-                    <span class="text-rose-400 font-medium">2 Major</span> severity issues,
+                    <span class="text-bad font-medium">15 bugs</span> including
+                    <span class="text-bad font-medium">2 Major</span> severity issues,
                     with detailed bug reports for each finding.
                 </p>
             </div>
@@ -726,28 +673,26 @@
         {{-- Stats --}}
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
             <div class="glass-card p-4 text-center">
-                <div class="text-2xl font-bold text-indigo-400">161</div>
-                <div class="text-xs text-slate-400 mt-1">Test Steps</div>
+                <div class="text-2xl font-bold text-accent">161</div>
+                <div class="text-xs text-ink-2 mt-1">Test Steps</div>
             </div>
             <div class="glass-card p-4 text-center">
-                <div class="text-2xl font-bold text-rose-400">15</div>
-                <div class="text-xs text-slate-400 mt-1">Bugs Found</div>
+                <div class="text-2xl font-bold text-bad">15</div>
+                <div class="text-xs text-ink-2 mt-1">Bugs Found</div>
             </div>
             <div class="glass-card p-4 text-center">
-                <div class="text-2xl font-bold text-amber-400">2</div>
-                <div class="text-xs text-slate-400 mt-1">Major Bugs</div>
+                <div class="text-2xl font-bold text-warn">2</div>
+                <div class="text-xs text-ink-2 mt-1">Major Bugs</div>
             </div>
             <div class="glass-card p-4 text-center">
-                <div class="text-2xl font-bold text-cyan-400">11 min</div>
-                <div class="text-xs text-slate-400 mt-1">Execution Time</div>
+                <div class="text-2xl font-bold text-accent">11 min</div>
+                <div class="text-xs text-ink-2 mt-1">Execution Time</div>
             </div>
         </div>
 
         {{-- Sample Test Cases --}}
         <div class="mb-6 reveal">
-            <h4 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="table" class="w-4 h-4 text-indigo-400"></i>
-                Sample Test Cases (Task Module)
+            <h4 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Sample Test Cases (Task Module)
             </h4>
             <div class="glass-card overflow-hidden">
                 <div class="overflow-x-auto">
@@ -763,28 +708,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">1</td>
+                                <td class="font-mono text-accent whitespace-nowrap">1</td>
                                 <td>Login to platform as Operator</td>
                                 <td>Successfully login using credential provided</td>
                                 <td>Successfully login using credential provided</td>
                                 <td><span class="status-pass font-mono text-xs">PASS</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">2</td>
+                                <td class="font-mono text-accent whitespace-nowrap">2</td>
                                 <td>Check if Task menu exists on the menu list</td>
                                 <td>Task menu is between Student and Mailbox menu</td>
                                 <td>Task menu is between Companies and Mailbox menu</td>
                                 <td><span class="status-na font-mono text-xs">N/A</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">2</td>
+                                <td class="font-mono text-accent whitespace-nowrap">2</td>
                                 <td>Verify menu label in both languages (EN/FR)</td>
                                 <td>[EN] Tasks, [FR] Tache</td>
                                 <td>[EN] Tasks, [FR] Taches</td>
                                 <td><span class="status-warning font-mono text-xs">WARNING</span></td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-indigo-400 whitespace-nowrap">3</td>
+                                <td class="font-mono text-accent whitespace-nowrap">3</td>
                                 <td>Navigate to Task menu and check table display</td>
                                 <td>List of Task table displayed once clicked</td>
                                 <td>List of Task table displayed once clicked</td>
@@ -798,9 +743,7 @@
 
         {{-- Bug Report Highlights --}}
         <div class="mb-6 reveal">
-            <h4 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="bug" class="w-4 h-4 text-rose-400"></i>
-                Bug Report Highlights
+            <h4 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Bug Report Highlights
             </h4>
             <div class="glass-card overflow-hidden">
                 <div class="overflow-x-auto">
@@ -815,91 +758,89 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="font-mono text-rose-400 whitespace-nowrap">BUG_004</td>
+                                <td class="font-mono text-bad whitespace-nowrap">BUG_004</td>
                                 <td class="whitespace-nowrap">Task - Notification</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30">Major</span></td>
-                                <td>TASK_N5 notification not received — task assignment notification never delivered</td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-bad-soft text-bad border border-bad">Major</span></td>
+                                <td>TASK_N5 notification not received: task assignment notification never delivered</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-rose-400 whitespace-nowrap">BUG_014</td>
+                                <td class="font-mono text-bad whitespace-nowrap">BUG_014</td>
                                 <td class="whitespace-nowrap">Task - Detail Pop-up</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30">Major</span></td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-bad-soft text-bad border border-bad">Major</span></td>
                                 <td>Detail pop-up does not open for tasks with "Done" status</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-amber-400 whitespace-nowrap">BUG_001</td>
+                                <td class="font-mono text-warn whitespace-nowrap">BUG_001</td>
                                 <td class="whitespace-nowrap">Task - Add Task</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">Medium</span></td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-warn-soft text-warn border border-warn">Medium</span></td>
                                 <td>Mandatory Class field has no red state or required message when left empty</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-amber-400 whitespace-nowrap">BUG_012</td>
+                                <td class="font-mono text-warn whitespace-nowrap">BUG_012</td>
                                 <td class="whitespace-nowrap">Task - Add Task</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">Medium</span></td>
-                                <td>Past dates are selectable as Due date — no validation on date picker</td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-warn-soft text-warn border border-warn">Medium</span></td>
+                                <td>Past dates are selectable as Due date: no validation on date picker</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-amber-400 whitespace-nowrap">BUG_013</td>
+                                <td class="font-mono text-warn whitespace-nowrap">BUG_013</td>
                                 <td class="whitespace-nowrap">Task - Add Task</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">Medium</span></td>
-                                <td>User search by First name not working — only Last name returns results</td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-warn-soft text-warn border border-warn">Medium</span></td>
+                                <td>User search by First name not working: only Last name returns results</td>
                             </tr>
                             <tr>
-                                <td class="font-mono text-slate-400 whitespace-nowrap">BUG_005</td>
+                                <td class="font-mono text-ink-2 whitespace-nowrap">BUG_005</td>
                                 <td class="whitespace-nowrap">Task - Menu</td>
-                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-slate-500/20 text-slate-400 border border-slate-500/30">Minor</span></td>
-                                <td>French labels show "Taches / Ajoute une tache" — plural inconsistency</td>
+                                <td><span class="px-2 py-0.5 rounded text-xs font-bold bg-surface-2 text-ink-2 border border-line">Minor</span></td>
+                                <td>French labels show "Taches / Ajoute une tache": plural inconsistency</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <p class="text-xs text-slate-500 mt-2 text-center">
-                Showing 6 of 15 bugs — download the full report below for complete details
+            <p class="text-xs text-muted mt-2 text-center">
+                Showing 6 of 15 bugs. Download the full report below for complete details
             </p>
         </div>
 
         {{-- Bug Report Example --}}
         <div class="mb-6 reveal">
-            <h4 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-                <i data-lucide="file-text" class="w-4 h-4 text-violet-400"></i>
-                Bug Report Example — BUG_001
+            <h4 class="text-sm font-semibold text-ink-2 mb-3 flex items-center gap-2">Bug Report Example: BUG_001
             </h4>
-            <div class="glass-card p-5" style="background: rgba(99, 102, 241, 0.03);">
+            <div class="glass-card p-5">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
                     <div>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Bug ID</span>
-                        <p class="text-slate-200 font-mono mt-0.5">BUG_001</p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Bug ID</span>
+                        <p class="text-ink font-mono mt-0.5">BUG_001</p>
                     </div>
                     <div>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Severity</span>
-                        <p class="mt-0.5"><span class="px-2 py-0.5 rounded text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">Medium</span></p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Severity</span>
+                        <p class="mt-0.5"><span class="px-2 py-0.5 rounded text-xs font-bold bg-warn-soft text-warn border border-warn">Medium</span></p>
                     </div>
                     <div class="sm:col-span-2">
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Summary</span>
-                        <p class="text-slate-200 mt-0.5">Mandatory Class field does not turn RED and shows no 'required' message when it is left empty</p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Summary</span>
+                        <p class="text-ink mt-0.5">Mandatory Class field does not turn RED and shows no 'required' message when it is left empty</p>
                     </div>
                     <div class="sm:col-span-2">
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Steps to Reproduce</span>
-                        <div class="text-slate-300 mt-0.5 text-xs leading-relaxed space-y-1">
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Steps to Reproduce</span>
+                        <div class="text-ink-2 mt-0.5 text-xs leading-relaxed space-y-1">
                             <p>1. Access the platform URL</p>
                             <p>2. Login with operator credentials</p>
-                            <p>3. Navigate to Task → Add Task</p>
+                            <p>3. Navigate to Task > Add Task</p>
                             <p>4. Leave the "Class" field empty</p>
                             <p>5. Try to submit the form</p>
                         </div>
                     </div>
                     <div>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Expected</span>
-                        <p class="text-emerald-400 text-xs mt-0.5">Field turns RED with a "required" validation message</p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Expected</span>
+                        <p class="text-good text-xs mt-0.5">Field turns RED with a "required" validation message</p>
                     </div>
                     <div>
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Actual</span>
-                        <p class="text-rose-400 text-xs mt-0.5">Field does not change color and no message is displayed</p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Actual</span>
+                        <p class="text-bad text-xs mt-0.5">Field does not change color and no message is displayed</p>
                     </div>
                     <div class="sm:col-span-2">
-                        <span class="text-xs text-slate-500 uppercase tracking-wider font-medium">Reproducibility</span>
-                        <p class="text-slate-300 text-xs mt-0.5">Permanent — occurs every time</p>
+                        <span class="text-xs text-muted uppercase tracking-wider font-medium">Reproducibility</span>
+                        <p class="text-ink-2 text-xs mt-0.5">Permanent, occurs every time</p>
                     </div>
                 </div>
             </div>
@@ -911,7 +852,7 @@
                 <i data-lucide="download" class="w-3.5 h-3.5"></i>
                 Download Test Case (XLSX)
             </a>
-            <a href="{{ asset('docs/Bug_Report-Task_Module.xlsx') }}" download class="btn-primary text-xs py-2.5 px-4" style="background: linear-gradient(135deg, rgba(244, 63, 94, 0.15), rgba(244, 63, 94, 0.05)); border-color: rgba(244, 63, 94, 0.3); color: #fb7185;">
+            <a href="{{ asset('docs/Bug_Report-Task_Module.xlsx') }}" download class="btn-primary text-xs py-2.5 px-4">
                 <i data-lucide="download" class="w-3.5 h-3.5"></i>
                 Download Bug Report (XLSX)
             </a>

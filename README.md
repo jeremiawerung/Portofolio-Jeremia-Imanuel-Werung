@@ -1,6 +1,6 @@
-# Jeremia Imanuel Werung — Portfolio
+# Jeremia Imanuel Werung's Portfolio
 
-**QA Engineer & Web Developer** · Yogyakarta, Indonesia
+**QA Engineer & Web Developer** in Yogyakarta, Indonesia
 
 🌐 **Live:** [jeremiawerung.my.id](https://jeremiawerung.my.id)
 
@@ -17,8 +17,8 @@ Most portfolios only show the finished work. This one also shows the **process**
 
 | Page | What it does |
 |---|---|
-| **Home · About · Achievements** | Introduction, skills, career timeline, education, and certificates |
-| **Projects · Case Studies** | Production web apps and in-depth QA case studies (test cases, bug reports, Playwright automation) |
+| **Home, About, Achievements** | Introduction, skills, career timeline, education, and certificates |
+| **Projects, Case Studies** | Production web apps and in-depth QA case studies (test cases, bug reports, Playwright automation) |
 | **Insights** | Articles and curated software-testing resources |
 | **Dashboard** | Live site analytics, GitHub contributions heatmap, and WakaTime coding stats |
 | **Chat Room** | Public guestbook-style chat with near real-time updates and admin moderation |

@@ -1,101 +1,66 @@
-<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
-    {{-- Left Column - About Text --}}
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-start">
+    {{-- Kiri: cerita singkat --}}
     <div class="lg:col-span-3 reveal">
-        <div class="glass-card p-6 sm:p-8">
-            <h3 class="text-xl font-bold text-slate-100 mb-4 flex items-center gap-2">
-                <i data-lucide="sparkles" class="w-5 h-5 text-indigo-400"></i>
-                Who Am I?
-            </h3>
-            <div class="space-y-4 text-slate-400 leading-relaxed">
-                <p>
-                    Information Systems graduate from <span class="text-indigo-400 font-medium">Universitas Teknologi Yogyakarta</span>
-                    with a strong focus on software quality assurance, system analysis, and data processing.
-                </p>
-                <p>
-                    Equipped with hands-on experience ranging from managing daily transaction records to building
-                    integrated web systems and conducting comprehensive software testing. Highly adaptable,
-                    detail-oriented, and fully prepared to contribute to delivering high-quality software products.
-                </p>
-                <p>
-                    I believe in continuous learning and staying updated with the latest technologies.
-                    My goal is to bridge the gap between development and quality, ensuring every product
-                    I touch meets the highest standards.
-                </p>
-            </div>
-
-            {{-- Quick Facts --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-700/50">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center">
-                        <i data-lucide="user" class="w-5 h-5 text-indigo-400"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wider">Name</p>
-                        <p class="text-sm text-slate-200 font-medium">Jeremia Imanuel Werung</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
-                        <i data-lucide="cake" class="w-5 h-5 text-cyan-400"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wider">Age</p>
-                        <p class="text-sm text-slate-200 font-medium">21 Years Old</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-violet-400"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wider">Location</p>
-                        <p class="text-sm text-slate-200 font-medium">Yogyakarta, Indonesia</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                        <i data-lucide="briefcase" class="w-5 h-5 text-emerald-400"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wider">Focus</p>
-                        <p class="text-sm text-slate-200 font-medium">QA & Web Development</p>
-                    </div>
-                </div>
-            </div>
+        <h2 class="text-2xl font-semibold text-ink mb-4">Who I am</h2>
+        <div class="space-y-4 text-ink-2 leading-relaxed">
+            <p>
+                I'm an Information Systems graduate from <span class="font-semibold text-ink">Universitas Teknologi Yogyakarta</span>.
+                Most of my work sits between building and testing: I write test cases, catch bugs before users run into them,
+                and build Laravel apps when a business needs one.
+            </p>
+            <p>
+                I've done the unglamorous parts too, like recording daily transactions at a salon and checking 600+ student
+                records before they went to print. That habit of double checking is what I bring to QA.
+            </p>
+            <p>
+                Right now I'm looking for a QA or web development role where I can keep learning from a real product team.
+            </p>
         </div>
+
+        {{-- Data singkat --}}
+        <dl class="grid grid-cols-2 gap-x-6 gap-y-4 mt-8 pt-6 border-t border-line text-sm">
+            <div>
+                <dt class="text-muted">Name</dt>
+                <dd class="text-ink font-medium">Jeremia Imanuel Werung</dd>
+            </div>
+            <div>
+                <dt class="text-muted">Age</dt>
+                <dd class="text-ink font-medium">21</dd>
+            </div>
+            <div>
+                <dt class="text-muted">Based in</dt>
+                <dd class="text-ink font-medium">Yogyakarta, Indonesia</dd>
+            </div>
+            <div>
+                <dt class="text-muted">Focus</dt>
+                <dd class="text-ink font-medium">QA &amp; web development</dd>
+            </div>
+        </dl>
     </div>
 
-    {{-- Right Column - Highlights --}}
-    <div class="lg:col-span-2 space-y-6 reveal">
-        {{-- What I Do Cards --}}
-        <div class="glass-card p-6 group">
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
-                <i data-lucide="shield-check" class="w-6 h-6 text-indigo-400"></i>
+    {{-- Kanan: yang dikerjain sehari-hari --}}
+    <div class="lg:col-span-2 reveal">
+        <h2 class="text-2xl font-semibold text-ink mb-4">What I do</h2>
+        <div class="divide-y divide-line border-y border-line">
+            <div class="py-4">
+                <h3 class="font-semibold text-ink">Quality assurance</h3>
+                <p class="mt-1 text-sm text-ink-2 leading-relaxed">
+                    Manual and automated testing, test case design, and bug reports that developers can act on.
+                    Playwright and PHPUnit for the automated part.
+                </p>
             </div>
-            <h4 class="text-lg font-bold text-slate-100 mb-2">Quality Assurance</h4>
-            <p class="text-sm text-slate-400 leading-relaxed">
-                Ensuring software reliability through comprehensive testing strategies, bug tracking, and quality metrics analysis.
-            </p>
-        </div>
-
-        <div class="glass-card p-6 group">
-            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
-                <i data-lucide="code-2" class="w-6 h-6 text-cyan-400"></i>
+            <div class="py-4">
+                <h3 class="font-semibold text-ink">Web development</h3>
+                <p class="mt-1 text-sm text-ink-2 leading-relaxed">
+                    Laravel, Filament, and Tailwind CSS. I build and maintain web apps that real businesses use every day.
+                </p>
             </div>
-            <h4 class="text-lg font-bold text-slate-100 mb-2">Web Development</h4>
-            <p class="text-sm text-slate-400 leading-relaxed">
-                Building responsive, user-friendly web applications using modern technologies like Laravel, Tailwind CSS, and more.
-            </p>
-        </div>
-
-        <div class="glass-card p-6 group">
-            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
-                <i data-lucide="bar-chart-3" class="w-6 h-6 text-violet-400"></i>
+            <div class="py-4">
+                <h3 class="font-semibold text-ink">Data work</h3>
+                <p class="mt-1 text-sm text-ink-2 leading-relaxed">
+                    Cleaning and reconciling messy data from spreadsheets and forms, then turning it into something people can use.
+                </p>
             </div>
-            <h4 class="text-lg font-bold text-slate-100 mb-2">Data Analysis</h4>
-            <p class="text-sm text-slate-400 leading-relaxed">
-                Transforming raw data into meaningful insights using analytical tools and visualization techniques.
-            </p>
         </div>
     </div>
 </div>
