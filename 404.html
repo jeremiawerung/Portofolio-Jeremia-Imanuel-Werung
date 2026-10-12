@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremia Imanuel Werung — Portfolio has moved</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://jeremiawerung.my.id/">
+    <meta http-equiv="refresh" content="0; url=https://jeremiawerung.my.id/">
+    <script>
+        // Portofolio pindah ke jeremiawerung.my.id. Anchor lama (#projects, dll)
+        // diarahin ke halaman yang sesuai di web baru.
+        (function () {
+            var routes = {
+                about: '/about', experience: '/about', projects: '/projects',
+                'case-studies': '/case-studies', fyi: '/insights', skills: '/',
+                qualifications: '/achievements', contact: '/contact', hero: '/'
+            };
+            var anchor = location.hash.replace('#', '');
+            location.replace('https://jeremiawerung.my.id' + (routes[anchor] || '/'));
+        })();
+    </script>
+    <style>
+        body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0f1d; color: #f1f5f9; font-family: system-ui, sans-serif; text-align: center; padding: 1rem; }
+        a { color: #818cf8; }
+    </style>
+</head>
+<body>
+    <p>My portfolio has moved to <a href="https://jeremiawerung.my.id/">jeremiawerung.my.id</a>.</p>
+</body>
+</html>
