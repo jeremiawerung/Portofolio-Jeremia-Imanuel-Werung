@@ -26,6 +26,7 @@ return [
         'github' => 3600,
         'wakatime' => 3600,
         'analytics' => 60,
+        'lock_wait' => 10,        // detik nunggu request lain yang lagi ngambil data API
     ],
 
     'chat' => [

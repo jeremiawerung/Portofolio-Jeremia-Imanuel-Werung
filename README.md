@@ -7,7 +7,7 @@
 ![Laravel 12](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white)
 ![PHP 8.4](https://img.shields.io/badge/PHP-8.4-777BB4?logo=php&logoColor=white)
 ![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
-![Tests](https://img.shields.io/badge/feature_tests-45_passing-34D399)
+![Tests](https://img.shields.io/badge/feature_tests-47_passing-34D399)
 
 Most portfolios only show the finished work. This one also shows the **process**: a live dashboard pulls real data from GitHub, WakaTime, and the site's own traffic, so visitors see actual numbers instead of claims. Visitors can also leave a message in a public chat room or ask an AI assistant about my experience.
 
@@ -53,7 +53,7 @@ Most portfolios only show the finished work. This one also shows the **process**
 
 This is a QA portfolio, so the site is tested like one:
 
-- **45 feature tests (PHPUnit)** cover every page, chat validation and moderation, rate limits, XSS stripping, the honeypot, AI error handling, daily caps, dashboard caching and fallbacks, analytics bot filtering, and admin authentication.
+- **47 feature tests (PHPUnit)** cover every page, chat validation and moderation, rate limits, XSS stripping, the honeypot, AI error handling, daily caps, dashboard caching, fallbacks and API stampede protection, analytics bot filtering, and admin authentication.
 - External HTTP calls are faked in tests (`Http::fake` + `preventStrayRequests`), and tests run against an in-memory SQLite database.
 - Security basics are covered:
   - CSRF on every write
@@ -120,7 +120,7 @@ app/Services           GitHub, WakaTime, analytics, AI client
 resources/views/pages  One Blade view per page (+ partials)
 resources/js/pages     Dashboard charts, chat polling, Smart Talk UI
 resources/ai           Smart Talk knowledge and rules
-tests/Feature          45 feature tests
+tests/Feature          47 feature tests
 ```
 
 ## Contact

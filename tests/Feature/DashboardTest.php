@@ -69,6 +69,35 @@ class DashboardTest extends TestCase
         $this->getJson('/dashboard/data/github')->assertServiceUnavailable();
     }
 
+    public function test_first_time_failure_is_retried_after_one_minute(): void
+    {
+        Http::fake(['github-contributions-api.jogruber.de/*' => Http::sequence()
+            ->push('down', 500)
+            ->push(['contributions' => [['date' => '2025-10-05', 'count' => 3, 'level' => 1]]])]);
+
+        $this->getJson('/dashboard/data/github')->assertServiceUnavailable();
+        $this->getJson('/dashboard/data/github')->assertServiceUnavailable(); // masih ditahan
+        Http::assertSentCount(1);
+
+        $this->travel(61)->seconds();
+
+        $this->getJson('/dashboard/data/github')->assertOk()->assertJsonPath('total', 3);
+        Http::assertSentCount(2);
+    }
+
+    public function test_waits_for_another_request_instead_of_calling_the_api_again(): void
+    {
+        config(['portfolio.cache.lock_wait' => 0]);
+        Http::fake();
+
+        // Pura-puranya request lain lagi ngambil data GitHub (lock-nya kepegang)
+        Cache::forever('dashboard:github:last', ['total' => 77, 'this_week' => 0, 'best' => 5, 'average' => 0.2, 'weeks' => []]);
+        Cache::lock('dashboard:github:fetching', 30)->get();
+
+        $this->getJson('/dashboard/data/github')->assertOk()->assertJsonPath('total', 77);
+        Http::assertNothingSent();
+    }
+
     public function test_wakatime_section_hidden_without_key(): void
     {
         $this->get('/dashboard')->assertOk()->assertDontSee('data-dashboard="wakatime"', false);
