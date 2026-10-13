@@ -2,7 +2,7 @@
 
 @section('title', 'Smart Talk')
 @section('page', 'smart-talk')
-@section('description', "Ask Smart Talk, an AI assistant that answers questions about Jeremia Werung's work, skills, and projects.")
+@section('description', "Ask Smart Talk, an AI assistant that answers questions about Jeremia Imanuel Werung's work, skills, and projects.")
 
 @section('content')
     <x-page-header title="Smart Talk" lead="An AI assistant that has read my portfolio. Ask about my experience, projects, or skills in English or Bahasa Indonesia." />

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>{{ $code }} | Jeremia Werung</title>
+    <title>{{ $code }} | Jeremia Imanuel Werung</title>
     <style>
         :root { color-scheme: light dark; --page: #f2eee6; --ink: #1f1b17; --ink-2: #4a433c; --accent: #a3482a; --accent-ink: #fff; }
         @media (prefers-color-scheme: dark) {

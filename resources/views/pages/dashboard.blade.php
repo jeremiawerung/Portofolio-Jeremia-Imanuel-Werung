@@ -2,7 +2,7 @@
 
 @section('title', 'Dashboard')
 @section('page', 'dashboard')
-@section('description', "Jeremia Werung's live dashboard: site traffic, GitHub contributions, and coding activity, updated automatically.")
+@section('description', "Jeremia Imanuel Werung's live dashboard: site traffic, GitHub contributions, and coding activity, updated automatically.")
 
 @php
     $tile = fn (string $label, string $key, string $suffix = '') => compact('label', 'key', 'suffix');

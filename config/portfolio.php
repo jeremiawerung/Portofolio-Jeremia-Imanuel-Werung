@@ -12,7 +12,7 @@ return [
 
     'owner' => [
         'name' => 'Jeremia Imanuel Werung',
-        'short_name' => 'Jeremia Werung',
+        'short_name' => 'Jeremia Imanuel Werung',
         'handle' => 'jeremiawerung',
         'email' => 'jeremia07102004@gmail.com',
     ],

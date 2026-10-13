@@ -2,7 +2,7 @@
 
 @section('title', 'Chat Room')
 @section('page', 'chat-room')
-@section('description', 'Leave a message for Jeremia Werung or say hi to other visitors.')
+@section('description', 'Leave a message for Jeremia Imanuel Werung or say hi to other visitors.')
 
 @section('content')
     <x-page-header title="Chat Room" lead="Leave a message, ask something, or just say hi. Messages are public, so keep it friendly. I'll reply here when I can." />

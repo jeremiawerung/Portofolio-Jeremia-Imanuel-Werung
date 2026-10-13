@@ -48,7 +48,7 @@ class AppServiceProvider extends ServiceProvider
 
             return [
                 Limit::perMinute($limits['per_minute'])->by('chat-m:'.$request->ip())
-                    ->response($tooMany('Slow down a little — try again in a minute.')),
+                    ->response($tooMany('Slow down a little. Try again in a minute.')),
                 Limit::perDay($limits['per_day'])->by('chat-d:'.$request->ip())
                     ->response($tooMany("You've reached today's message limit.")),
             ];
@@ -59,7 +59,7 @@ class AppServiceProvider extends ServiceProvider
 
             return [
                 Limit::perMinute($limits['per_minute'])->by('talk-m:'.$request->ip())
-                    ->response($tooMany('Too many questions at once — wait a minute and try again.')),
+                    ->response($tooMany('Too many questions at once. Wait a minute and try again.')),
                 Limit::perDay($limits['per_day'])->by('talk-d:'.$request->ip())
                     ->response($tooMany("You've reached today's Smart Talk limit. Feel free to use the Contact page.")),
             ];

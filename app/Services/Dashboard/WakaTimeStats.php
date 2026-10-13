@@ -43,13 +43,13 @@ class WakaTimeStats
         return [
             'start_date' => $this->date($week['start'] ?? null),
             'end_date' => $this->date($week['end'] ?? null),
-            'daily_average' => $week['human_readable_daily_average'] ?? '—',
-            'total_week' => $week['human_readable_total'] ?? '—',
+            'daily_average' => $week['human_readable_daily_average'] ?? '-',
+            'total_week' => $week['human_readable_total'] ?? '-',
             'best_day' => $bestDay ? [
                 'date' => $this->date($bestDay['date'] ?? null),
                 'text' => $bestDay['text'] ?? '',
             ] : null,
-            'all_time' => $allTime['text'] ?? '—',
+            'all_time' => $allTime['text'] ?? '-',
             'languages' => $this->top($week['languages'] ?? [], 6),
             'editors' => $this->top($week['editors'] ?? [], 3),
             'updated_at' => now()->toIso8601String(),

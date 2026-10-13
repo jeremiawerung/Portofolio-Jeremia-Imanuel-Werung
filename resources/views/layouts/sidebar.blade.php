@@ -23,7 +23,7 @@
         <a href="{{ route('home') }}" class="inline-block">
             <img src="{{ asset('images/profile.jpeg') }}" alt="Jeremia Imanuel Werung" class="w-24 h-24 mx-auto rounded-full object-cover border border-line" width="96" height="96" decoding="async">
         </a>
-        <p class="mt-4 font-serif text-xl font-semibold text-ink">Jeremia Werung</p>
+        <p class="mt-4 font-serif text-xl font-semibold text-ink">Jeremia Imanuel Werung</p>
         <p class="text-sm text-muted">QA Engineer &amp; Web Developer</p>
 
         <div class="mt-4 flex items-center justify-center gap-1">

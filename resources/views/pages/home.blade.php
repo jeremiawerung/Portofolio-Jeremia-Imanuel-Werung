@@ -6,7 +6,7 @@
     {{-- Perkenalan --}}
     <section class="reveal visible">
         <p class="text-sm text-muted">QA Engineer &amp; Web Developer, Yogyakarta</p>
-        <h1 class="page-title mt-2 sm:text-5xl">Hi, I'm Jeremia Werung.</h1>
+        <h1 class="page-title mt-2 sm:text-5xl">Hi, I'm Jeremia Imanuel Werung.</h1>
 
         <p class="page-lead mt-5">
             I test software and build it. I write test cases, automate end-to-end flows with Playwright,

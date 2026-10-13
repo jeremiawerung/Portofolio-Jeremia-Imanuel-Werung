@@ -17,8 +17,9 @@
 
     @php
         $pageTitle = trim($__env->yieldContent('title'));
-        $fullTitle = $pageTitle ? "{$pageTitle} | Jeremia Werung" : 'Jeremia Imanuel Werung | QA Engineer & Web Developer';
-        $description = trim($__env->yieldContent('description')) ?: 'Portfolio of Jeremia Imanuel Werung, a QA engineer and web developer in Yogyakarta, Indonesia. Projects, QA case studies, and a live developer dashboard.';
+        $fullTitle = $pageTitle ? "{$pageTitle} | Jeremia Imanuel Werung" : 'Jeremia Imanuel Werung | QA Engineer & Web Developer';
+        // teks dari section description udah di-escape Blade, jadi dibalikin dulu biar di meta tag gak ke-escape dua kali (tanda petik jadi &#039;)
+        $description = html_entity_decode(trim($__env->yieldContent('description')), ENT_QUOTES | ENT_HTML5, 'UTF-8') ?: 'Portfolio of Jeremia Imanuel Werung, a QA engineer and web developer in Yogyakarta, Indonesia. Projects, QA case studies, and a live developer dashboard.';
     @endphp
 
     <title>{{ $fullTitle }}</title>
@@ -48,7 +49,7 @@
     <header class="lg:hidden fixed top-0 inset-x-0 z-50 h-14 flex items-center justify-between px-4 bg-page/95 backdrop-blur border-b border-line">
         <a href="{{ route('home') }}" class="flex items-center gap-2.5">
             <img src="{{ asset('images/profile.jpeg') }}" alt="" class="w-8 h-8 rounded-full object-cover" width="32" height="32">
-            <span class="font-serif text-lg font-semibold text-ink">Jeremia Werung</span>
+            <span class="font-serif text-lg font-semibold text-ink">Jeremia Imanuel Werung</span>
         </a>
         <button type="button" id="sidebar-open" class="p-2 text-ink-2 hover:text-ink" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
             <i data-lucide="menu" class="w-6 h-6"></i>
