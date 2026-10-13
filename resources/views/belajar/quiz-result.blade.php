@@ -1,12 +1,12 @@
 @extends('belajar.layout')
 
-@section('title', 'Hasil Kuis ' . $levelLabel . ' — ' . $block['title'])
+@section('title', 'Hasil Kuis ' . $levelLabel . ': ' . $block['title'])
 
 @section('content')
   <div class="hero-kicker">
     <a href="{{ route('belajar.quiz.levels', $block['id']) }}">&larr; kembali ke pilihan level</a>
   </div>
-  <h1>Hasil Kuis — Level {{ $levelLabel }}</h1>
+  <h1>Hasil Kuis Level {{ $levelLabel }}</h1>
   <p class="lede">{{ $block['title'] }} ({{ $block['days'] }})</p>
 
   @php
@@ -18,10 +18,10 @@
       @if ($passed)
         Lolos ambang batas level ini ({{ round($passScore * 100) }}%).
       @else
-        Belum lolos ambang batas level ini (butuh minimal {{ round($passScore * 100) }}%) — level berikutnya masih terkunci.
+        Belum lolos ambang batas level ini (butuh minimal {{ round($passScore * 100) }}%), level berikutnya masih terkunci.
       @endif
     @else
-      Ini level tertinggi — kerjakan lagi kapan saja untuk mengasah, tanpa syarat unlock lagi.
+      Ini level tertinggi, kerjakan lagi kapan saja untuk mengasah, tanpa syarat unlock lagi.
     @endif
   </div>
 
@@ -48,7 +48,7 @@
         <div class="stat-label">Tren vs sebelumnya</div>
         <div class="stat-value {{ $analysis['trend'] === null ? '' : ($analysis['trend'] > 0 ? 'up' : ($analysis['trend'] < 0 ? 'down' : '')) }}">
           @if ($analysis['trend'] === null)
-            —
+            -
           @else
             {{ $analysis['trend'] > 0 ? '+' . $analysis['trend'] : $analysis['trend'] }}
           @endif
@@ -91,7 +91,7 @@
   </section>
 
   <section>
-    <h2>Riwayat Percobaan — Level {{ $levelLabel }}</h2>
+    <h2>Riwayat Percobaan Level {{ $levelLabel }}</h2>
     <table class="history-table">
       <thead>
         <tr><th>#</th><th>Tanggal</th><th>Skor</th><th>Persentase</th></tr>

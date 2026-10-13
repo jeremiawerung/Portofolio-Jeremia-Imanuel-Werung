@@ -1,13 +1,13 @@
 @extends('belajar.layout')
 
-@section('title', 'Kuis ' . $levelLabel . ' — ' . $block['title'])
+@section('title', 'Kuis ' . $levelLabel . ': ' . $block['title'])
 
 @section('content')
   <div class="hero-kicker">
     <a href="{{ route('belajar.quiz.levels', $block['id']) }}">&larr; pilih level lain</a>
   </div>
   <h1>Kuis Level {{ $levelLabel }}</h1>
-  <p class="lede">{{ $block['title'] }} ({{ $block['days'] }}) — {{ count($questions) }} dari {{ $poolSize }} soal di bank soal level ini, diacak setiap kamu mulai kuis.</p>
+  <p class="lede">{{ $block['title'] }} ({{ $block['days'] }}), {{ count($questions) }} dari {{ $poolSize }} soal di bank soal level ini, diacak setiap kamu mulai kuis.</p>
 
   <form method="POST" action="{{ route('belajar.quiz.submit', [$block['id'], $level]) }}">
     @csrf

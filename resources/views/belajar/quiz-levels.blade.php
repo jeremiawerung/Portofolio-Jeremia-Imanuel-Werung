@@ -1,13 +1,13 @@
 @extends('belajar.layout')
 
-@section('title', 'Pilih Level Kuis — ' . $block['title'])
+@section('title', 'Pilih Level Kuis: ' . $block['title'])
 
 @section('content')
   <div class="hero-kicker">
     <a href="{{ route('belajar.materi', $block['id']) }}">&larr; kembali ke materi</a>
   </div>
   <h1>Quiz Latihan Pemahaman</h1>
-  <p class="lede">{{ $block['title'] }} ({{ $block['days'] }}). Mulai dari Dasar — level berikutnya kebuka otomatis kalau skormu di level sebelumnya lolos ambang batas. Tiap kali kuis dibuka, soal diacak dari bank soal yang lebih besar, jadi tidak selalu soal yang sama persis.</p>
+  <p class="lede">{{ $block['title'] }} ({{ $block['days'] }}). Mulai dari Dasar, level berikutnya kebuka otomatis kalau skormu di level sebelumnya lolos ambang batas. Tiap kali kuis dibuka, soal diacak dari bank soal yang lebih besar, jadi tidak selalu soal yang sama persis.</p>
 
   @if (session('error'))
     <div class="alert error">{{ session('error') }}</div>

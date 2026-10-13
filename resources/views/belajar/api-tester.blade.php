@@ -20,7 +20,7 @@
       <input type="text" id="apiUrl" placeholder="https://reqres.in/api/users/2">
       <button class="btn" id="apiSend">Kirim</button>
     </div>
-    <textarea class="api-body" id="apiBody" placeholder='Body JSON (opsional, dipakai untuk POST / PUT) — contoh: {"name":"qa"}'></textarea>
+    <textarea class="api-body" id="apiBody" placeholder='Body JSON (opsional, dipakai untuk POST / PUT), contoh: {"name":"qa"}'></textarea>
     <div class="api-result" id="apiResult" style="display:none;"></div>
     <p class="api-note">Kalau muncul error <code>Failed to fetch</code>, kemungkinan besar itu masalah CORS dari API tujuan. Halaman ini sudah berjalan lewat <code>http://localhost</code> (server Laravel), jadi masalah CORS murni dari sisi API tujuan.</p>
   </div>
@@ -68,7 +68,7 @@
       res.headers.forEach((v, k) => headerLines.push(`${k}: ${v}`));
 
       resultBox.innerHTML = `
-        <div class="api-status ${res.ok ? "ok" : "err"}">${res.status} ${res.statusText} — ${elapsed}ms</div>
+        <div class="api-status ${res.ok ? "ok" : "err"}">${res.status} ${res.statusText} - ${elapsed}ms</div>
         <pre class="api-response">${escapeHtml(headerLines.join("\n"))}\n\n${escapeHtml(displayBody || "(response kosong)")}</pre>
       `;
     } catch (err) {

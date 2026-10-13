@@ -16,7 +16,7 @@
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/{{ $video['youtubeId'] }}" title="{{ $video['title'] }}" allowfullscreen loading="lazy"></iframe>
       </div>
-      <div class="video-meta"><strong>{{ $video['title'] }}</strong> — {{ $video['channel'] }}</div>
+      <div class="video-meta"><strong>{{ $video['title'] }}</strong> - {{ $video['channel'] }}</div>
     @endforeach
   @endif
 
@@ -65,7 +65,7 @@
 
     @if (!empty($block['day2']['template']))
       <div class="template-box">
-        <p><strong>Template</strong> — {{ $block['day2']['template']['description'] }}</p>
+        <p><strong>Template</strong>: {{ $block['day2']['template']['description'] }}</p>
         <ol>
           @foreach ($block['day2']['template']['columns'] as $col)
             <li>{{ $col }}</li>
@@ -99,7 +99,7 @@
     @endif
 
     @if (!empty($block['day2']['guidingQuestions']))
-      <p style="font-size: 13.5px; color: var(--ink-soft); margin: 14px 0 6px;"><strong style="color: var(--ink);">Pertanyaan pemandu</strong> — jawab ini untuk melengkapi dokumenmu:</p>
+      <p style="font-size: 13.5px; color: var(--ink-soft); margin: 14px 0 6px;"><strong style="color: var(--ink);">Pertanyaan pemandu</strong>: jawab ini untuk melengkapi dokumenmu:</p>
       <ul class="guiding-questions">
         @foreach ($block['day2']['guidingQuestions'] as $q)
           <li>{{ $q }}</li>
@@ -111,14 +111,14 @@
   </div>
 
   <div class="notes-wrap">
-    <label for="notes-area">Catatan / latihan bebas — blok ini</label>
+    <label for="notes-area">Catatan / latihan bebas: blok ini</label>
     <textarea class="notes-area" id="notes-area" placeholder="Tulis catatan, test case, atau bug report latihanmu di sini..."></textarea>
     <div class="save-hint" id="save-hint"></div>
   </div>
 
   @if ($block['hasQuiz'])
     <div class="btn-row">
-      <a class="btn" href="{{ route('belajar.quiz.levels', $block['id']) }}">Quiz Latihan Pemahaman ({{ $block['quizQuestionCount'] }} soal, 3 level) →</a>
+      <a class="btn" href="{{ route('belajar.quiz.levels', $block['id']) }}">Quiz Latihan Pemahaman ({{ $block['quizQuestionCount'] }} soal, 3 level)</a>
     </div>
   @endif
 
