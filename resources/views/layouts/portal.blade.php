@@ -17,7 +17,16 @@
             var saved = null;
             try { saved = localStorage.getItem('theme'); } catch (e) {}
             @if ($fantasy)
-            if (saved === 'gengar') { document.documentElement.dataset.theme = 'gengar'; return; }
+            if (saved === 'gengar') {
+                document.documentElement.dataset.theme = 'gengar';
+                // font mode Gengar langsung dimuat dari sini, gak nunggu JS-nya
+                var font = document.createElement('link');
+                font.id = 'fx-fonts';
+                font.rel = 'stylesheet';
+                font.href = 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Silkscreen&display=swap';
+                document.head.appendChild(font);
+                return;
+            }
             @endif
             var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
             document.documentElement.dataset.theme = dark ? 'dark' : 'light';
