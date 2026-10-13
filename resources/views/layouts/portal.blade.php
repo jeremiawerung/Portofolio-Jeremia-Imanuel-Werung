@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    @php
+        // My Fantasy Mode (mode rahasia Gengar). Kode + gambarnya di public/fantasy,
+        // sengaja gak masuk repo (gambar Pokémon), di-upload manual ke server.
+        $fantasy = is_file(public_path('fantasy/js/index.js'));
+    @endphp
+
     {{-- Pasang mode terang/gelap sebelum halaman digambar, biar gak kedip --}}
     <script>
         (function () {
             var saved = null;
             try { saved = localStorage.getItem('theme'); } catch (e) {}
+            @if ($fantasy)
+            if (saved === 'gengar') { document.documentElement.dataset.theme = 'gengar'; return; }
+            @endif
             var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
             document.documentElement.dataset.theme = dark ? 'dark' : 'light';
         })();
@@ -42,6 +51,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @if ($fantasy)
+        <link rel="stylesheet" href="{{ asset('fantasy/fantasy.css') }}?v={{ filemtime(public_path('fantasy/fantasy.css')) }}">
+        <script>window.FANTASY_CONFIG = @json(['foundUrl' => route('fantasy.found'), 'countUrl' => route('fantasy.count')]);</script>
+        <script type="module" src="{{ asset('fantasy/js/index.js') }}?v={{ filemtime(public_path('fantasy/js/index.js')) }}"></script>
+    @endif
 </head>
 <body class="antialiased" data-page="@yield('page')">
 

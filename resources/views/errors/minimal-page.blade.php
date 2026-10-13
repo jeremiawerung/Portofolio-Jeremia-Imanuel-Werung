@@ -20,6 +20,11 @@
         p { color: var(--ink-2); line-height: 1.6; margin: 0 0 1.5rem; }
         a { display: inline-block; padding: 0.65rem 1.1rem; border-radius: 0.5rem; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
     </style>
+    {{-- Kalau pengunjung lagi di mode Gengar, halaman 404 ikut versi Gengar --}}
+    @if ($code === 404 && is_file(public_path('fantasy/js/page-404.js')))
+        <link rel="stylesheet" href="{{ asset('fantasy/fantasy.css') }}">
+        <script type="module" src="{{ asset('fantasy/js/page-404.js') }}"></script>
+    @endif
 </head>
 <body>
     <main>

@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\BelajarController;
 use App\Http\Controllers\ChatRoomController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FantasyController;
 use App\Http\Controllers\SmartTalkController;
 use App\Http\Middleware\TrackPageView;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,12 @@ Route::delete('/chat-room/messages/{message}', [ChatRoomController::class, 'dest
 // ===== Smart Talk =====
 Route::post('/smart-talk/ask', [SmartTalkController::class, 'ask'])
     ->middleware('throttle:smart-talk')->name('smart-talk.ask');
+
+// ===== My Fantasy Mode (mode rahasia Gengar): penghitung penemu =====
+Route::post('/fantasy-mode/found', [FantasyController::class, 'found'])
+    ->middleware('throttle:10,1')->name('fantasy.found');
+Route::get('/fantasy-mode/count', [FantasyController::class, 'count'])
+    ->middleware('throttle:60,1')->name('fantasy.count');
 
 // ===== Admin (gak ada link dari menu) =====
 Route::get('/admin/login', [AuthController::class, 'create'])->middleware('guest')->name('login');
