@@ -21,7 +21,7 @@ class DashboardTest extends TestCase
         parent::setUp();
 
         Http::preventStrayRequests();
-        config(['services.github.token' => null, 'services.wakatime.key' => null]);
+        config(['services.github.token' => null]);
     }
 
     private function fakeContributions(): void
@@ -96,44 +96,6 @@ class DashboardTest extends TestCase
 
         $this->getJson('/dashboard/data/github')->assertOk()->assertJsonPath('total', 77);
         Http::assertNothingSent();
-    }
-
-    public function test_wakatime_section_hidden_without_key(): void
-    {
-        $this->get('/dashboard')->assertOk()->assertDontSee('data-dashboard="wakatime"', false);
-        $this->getJson('/dashboard/data/wakatime')->assertServiceUnavailable();
-    }
-
-    public function test_wakatime_summary_with_key(): void
-    {
-        config(['services.wakatime.key' => 'waka_test']);
-
-        Http::fake([
-            'wakatime.com/api/v1/users/current/stats/*' => Http::response(['data' => [
-                'start' => '2026-10-05T00:00:00Z',
-                'end' => '2026-10-11T23:59:59Z',
-                'human_readable_daily_average' => '3 hrs 16 mins',
-                'human_readable_total' => '22 hrs 57 mins',
-                'best_day' => ['date' => '2026-10-08', 'text' => '7 hrs 40 mins'],
-                'languages' => [
-                    ['name' => 'PHP', 'percent' => 61.24, 'text' => '14 hrs', 'total_seconds' => 50400],
-                    ['name' => 'Other', 'percent' => 0, 'text' => '0 secs', 'total_seconds' => 0],
-                ],
-            ]]),
-            'wakatime.com/api/v1/users/current/all_time_since_today' => Http::response(['data' => ['text' => '875 hrs 47 mins']]),
-        ]);
-
-        $this->get('/dashboard')->assertSee('data-dashboard="wakatime"', false);
-
-        $this->getJson('/dashboard/data/wakatime')
-            ->assertOk()
-            ->assertJsonPath('start_date', '2026-10-05')
-            ->assertJsonPath('daily_average', '3 hrs 16 mins')
-            ->assertJsonPath('best_day.text', '7 hrs 40 mins')
-            ->assertJsonPath('all_time', '875 hrs 47 mins')
-            ->assertJsonCount(1, 'languages');
-
-        Http::assertSent(fn ($request) => $request->hasHeader('Authorization', 'Basic '.base64_encode('waka_test')));
     }
 
     public function test_page_views_are_recorded_for_real_browsers_only(): void

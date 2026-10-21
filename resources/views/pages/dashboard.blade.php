@@ -108,14 +108,36 @@
         </div>
     </section>
 
-    @if ($wakatimeEnabled)
-        <hr class="page-divider">
+    @php($wakatimeStatus = session('wakatime_status'))
 
+    @if ($wakatimeEnabled || auth()->user()?->can('admin') || app()->environment('local'))
+        <hr class="page-divider">
+    @endif
+
+    {{-- Hasil nyambungin WakaTime, cuma admin yang bisa nyampe sini abis callback --}}
+    @if ($wakatimeStatus)
+        <p @class(['glass-card p-4 mb-6 text-sm', 'text-good' => $wakatimeStatus['type'] === 'success', 'text-bad' => $wakatimeStatus['type'] !== 'success']) role="status">
+            {{ $wakatimeStatus['message'] }}
+        </p>
+    @endif
+
+    @if ($wakatimeEnabled)
         {{-- ===== WAKATIME ===== --}}
         <section data-dashboard="wakatime" data-endpoint="{{ route('dashboard.wakatime') }}">
             <x-section-heading title="WakaTime Stats" lead="My coding activity over the past 7 days, tracked by the WakaTime editor plugin.">
                 <x-slot:aside>
-                    <span class="text-xs text-muted" data-field="updated_at"></span>
+                    <span class="flex items-center gap-3">
+                        <span class="text-xs text-muted" data-field="updated_at"></span>
+                        @can('admin')
+                            {{-- Buat jaga-jaga kalau token dicabut di WakaTime --}}
+                            <form method="POST" action="{{ route('admin.wakatime.connect') }}">
+                                @csrf
+                                <button type="submit" class="inline-flex items-center gap-1 text-xs text-ink-2 hover:text-ink">
+                                    <i data-lucide="refresh-cw" class="w-3 h-3"></i> Reconnect
+                                </button>
+                            </form>
+                        @endcan
+                    </span>
                 </x-slot:aside>
             </x-section-heading>
 
@@ -140,11 +162,25 @@
                 <ul class="space-y-3" data-list="languages"><li><span class="skeleton w-full"></span></li></ul>
             </div>
         </section>
+    @elseif (auth()->user()?->can('admin'))
+        {{-- Cuma admin yang lihat. Pengunjung gak lihat apa-apa sampai WakaTime nyambung. --}}
+        <div class="rounded-xl border border-dashed border-warn bg-warn-soft p-5 text-sm text-warn">
+            @if ($wakatimeConfigured)
+                <p><strong>WakaTime is not connected yet.</strong> Only you can see this. Connect once and the coding stats will show up for visitors.</p>
+                <form method="POST" action="{{ route('admin.wakatime.connect') }}" class="mt-3">
+                    @csrf
+                    <button type="submit" class="btn-primary">
+                        <i data-lucide="plug" class="w-4 h-4"></i> Connect WakaTime
+                    </button>
+                </form>
+            @else
+                <p><strong>WakaTime is not set up.</strong> Fill in <code>WAKATIME_CLIENT_ID</code> and <code>WAKATIME_CLIENT_SECRET</code> in .env, then reload this page.</p>
+            @endif
+        </div>
     @elseif (app()->environment('local'))
-        <hr class="page-divider">
         {{-- Pengingat ini cuma muncul di laptop, gak bakal kelihatan di server --}}
         <div class="rounded-xl border border-dashed border-warn bg-warn-soft p-5 text-sm text-warn">
-            <strong>Catatan lokal:</strong> bagian WakaTime disembunyiin karena <code>WAKATIME_API_KEY</code> di .env masih kosong.
+            <strong>Catatan lokal:</strong> bagian WakaTime disembunyiin karena belum disambungin. Isi <code>WAKATIME_CLIENT_ID</code> + <code>WAKATIME_CLIENT_SECRET</code> di .env, login admin di /admin/login, terus klik Connect WakaTime di halaman ini.
         </div>
     @endif
 @endsection

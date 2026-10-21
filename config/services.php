@@ -40,9 +40,13 @@ return [
         'token' => env('GITHUB_TOKEN'),
     ],
 
-    // Kalau kosong, bagian WakaTime di dashboard otomatis disembunyiin.
+    // OAuth app dari https://wakatime.com/apps. Abis diisi, admin nyambungin
+    // sekali lewat tombol di /dashboard. Sebelum nyambung, bagian WakaTime disembunyiin.
+    // Redirect URI kosong = otomatis pakai APP_URL/admin/wakatime/callback.
     'wakatime' => [
-        'key' => env('WAKATIME_API_KEY'),
+        'client_id' => env('WAKATIME_CLIENT_ID'),
+        'client_secret' => env('WAKATIME_CLIENT_SECRET'),
+        'redirect' => env('WAKATIME_REDIRECT_URI'),
     ],
 
     // Smart Talk. Bisa provider apa aja yang formatnya OpenAI-compatible

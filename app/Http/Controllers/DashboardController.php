@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Services\Dashboard\GitHubContributions;
 use App\Services\Dashboard\SiteAnalytics;
+use App\Services\Dashboard\WakaTimeOAuth;
 use App\Services\Dashboard\WakaTimeStats;
 use Illuminate\Http\JsonResponse;
 use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
-    public function index(WakaTimeStats $wakatime): View
+    public function index(WakaTimeStats $wakatime, WakaTimeOAuth $wakatimeOAuth): View
     {
         return view('pages.dashboard', [
             'wakatimeEnabled' => $wakatime->enabled(),
+            // Cuma dipakai buat tombol admin, token gak pernah ikut ke view
+            'wakatimeConfigured' => $wakatimeOAuth->configured(),
         ]);
     }
 

@@ -30,7 +30,7 @@ Most portfolios only show the finished work. This one also shows the **process**
 
 - **Site analytics, built in-house.** No cookies, no third-party scripts, and no raw IP addresses stored: each visitor is counted using a daily-rotating salted hash. Bots and my own admin visits are excluded.
 - **GitHub contributions.** Uses the public contribution calendar, or the official GraphQL API when a token is configured.
-- **WakaTime.** Shows the last 7 days of coding activity and all-time totals. The section hides itself when no API key is set.
+- **WakaTime.** Shows the last 7 days of coding activity and all-time totals, read through WakaTime OAuth. The admin connects it once, and the token refreshes itself. The section stays hidden until it is connected.
 - **No cron needed.** External data is cached and refreshed on demand. If an API is down, the dashboard shows the last good data instead of an empty state.
 
 ### Smart Talk
@@ -103,7 +103,8 @@ Optional settings in `.env`:
 |---|---|
 | `SMART_TALK_API_KEY` | Enables Smart Talk (for example a Groq API key) |
 | `SMART_TALK_BASE_URL` / `SMART_TALK_MODEL` | Switch to another OpenAI-compatible provider or model |
-| `WAKATIME_API_KEY` | Shows the WakaTime section on the dashboard |
+| `WAKATIME_CLIENT_ID` / `WAKATIME_CLIENT_SECRET` | WakaTime OAuth app. After setting them, log in as admin and click **Connect WakaTime** on the dashboard |
+| `WAKATIME_REDIRECT_URI` | Optional. Defaults to `APP_URL/admin/wakatime/callback` |
 | `GITHUB_TOKEN` | Uses the official GitHub GraphQL API instead of the public calendar |
 
 Create the admin account for Chat Room moderation:

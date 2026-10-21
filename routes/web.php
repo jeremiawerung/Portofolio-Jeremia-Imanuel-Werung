@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\WakaTimeController;
 use App\Http\Controllers\BelajarController;
 use App\Http\Controllers\ChatRoomController;
 use App\Http\Controllers\DashboardController;
@@ -52,6 +53,12 @@ Route::get('/fantasy-mode/count', [FantasyController::class, 'count'])
 Route::get('/admin/login', [AuthController::class, 'create'])->middleware('guest')->name('login');
 Route::post('/admin/login', [AuthController::class, 'store'])->middleware(['guest', 'throttle:5,1']);
 Route::post('/admin/logout', [AuthController::class, 'destroy'])->middleware('auth')->name('logout');
+
+// Sambungin kartu WakaTime di dashboard lewat OAuth (cukup sekali)
+Route::prefix('admin/wakatime')->name('admin.wakatime.')->middleware(['auth', 'can:admin', 'throttle:10,1'])->group(function () {
+    Route::post('/connect', [WakaTimeController::class, 'connect'])->name('connect');
+    Route::get('/callback', [WakaTimeController::class, 'callback'])->name('callback');
+});
 
 // Personal QA-learning tracker. Cuma nyala di laptop (APP_ENV=local),
 // jadi gak ikut kebuka pas di-deploy ke server.
