@@ -2,7 +2,7 @@
 
 @section('title', 'Contact')
 @section('page', 'contact')
-@section('description', 'Get in touch with Jeremia Imanuel Werung via email, WhatsApp, or Instagram.')
+@section('description', 'Get in touch with Jeremia Imanuel Werung via email, WhatsApp, LinkedIn, or Instagram.')
 
 @section('content')
     <x-page-header title="Contact" lead="Hiring for a QA or web role, or need help with a Laravel project? Email or WhatsApp works best." />

@@ -15,7 +15,21 @@ return [
         'short_name' => 'Jeremia Imanuel Werung',
         'handle' => 'jeremiawerung',
         'email' => 'jeremia07102004@gmail.com',
+        'job_title' => 'QA Engineer & Web Developer',
+        'city' => 'Yogyakarta',
+        'country' => 'ID',
+        'university' => 'Universitas Teknologi Yogyakarta',
+        // Akun lain punya Jeremia. Dipakai di data Person (JSON-LD) biar Google/AI tau semuanya orang yang sama.
+        'profiles' => [
+            'github' => 'https://github.com/jeremiawerung',
+            'linkedin' => 'https://www.linkedin.com/in/jeremiaimanuelwerung/',
+            'instagram' => 'https://instagram.com/jeremia.werung',
+            'medium' => 'https://medium.com/@jeremia07102004',
+        ],
     ],
+
+    // Halaman publik yang masuk sitemap.xml (nama route)
+    'sitemap' => ['home', 'about', 'achievements', 'projects', 'case-studies', 'insights', 'dashboard', 'chat', 'contact', 'smart-talk'],
 
     'github' => [
         'username' => env('GITHUB_USERNAME', 'jeremiawerung'),

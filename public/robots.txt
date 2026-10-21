@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /dashboard/data/
+Disallow: /chat-room/messages
+Disallow: /smart-talk/ask
+Disallow: /fantasy-mode/
+
+Sitemap: https://jeremiawerung.my.id/sitemap.xml

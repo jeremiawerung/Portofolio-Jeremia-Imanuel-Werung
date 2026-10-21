@@ -24,6 +24,12 @@ Route::middleware(TrackPageView::class)->group(function () {
     Route::get('/smart-talk', [SmartTalkController::class, 'index'])->name('smart-talk');
 });
 
+// ===== Sitemap buat Google/Bing (daftar halamannya di config/portfolio.php) =====
+Route::get('/sitemap.xml', fn () => response()
+    ->view('sitemap', ['routes' => config('portfolio.sitemap')])
+    ->header('Content-Type', 'application/xml; charset=UTF-8'))
+    ->middleware('throttle:60,1')->name('sitemap');
+
 // ===== Data dashboard (dipanggil JS) =====
 Route::prefix('dashboard/data')->name('dashboard.')->middleware('throttle:60,1')->group(function () {
     Route::get('/github', [DashboardController::class, 'github'])->name('github');

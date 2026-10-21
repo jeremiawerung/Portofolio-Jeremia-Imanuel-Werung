@@ -11,6 +11,10 @@
                 <dd><a href="https://wa.me/62895805193249" target="_blank" rel="noopener" class="font-medium text-ink hover:text-accent">0895805193249</a></dd>
             </div>
             <div class="py-4">
+                <dt class="text-muted">LinkedIn</dt>
+                <dd><a href="{{ config('portfolio.owner.profiles.linkedin') }}" target="_blank" rel="noopener" class="font-medium text-ink hover:text-accent">Jeremia Imanuel Werung</a></dd>
+            </div>
+            <div class="py-4">
                 <dt class="text-muted">Instagram</dt>
                 <dd><a href="https://instagram.com/jeremia.werung" target="_blank" rel="noopener" class="font-medium text-ink hover:text-accent">@jeremia.werung</a></dd>
             </div>

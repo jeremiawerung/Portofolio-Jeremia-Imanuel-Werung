@@ -54,6 +54,11 @@
     <meta property="og:description" content="{{ $description }}">
     <meta property="og:image" content="{{ asset('images/profile.jpeg') }}">
     <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Jeremia Imanuel Werung">
+    <meta name="twitter:card" content="summary">
+    {{-- Alamat resmi halaman (tanpa ?query), biar Google gak nganggep ada halaman kembar --}}
+    <link rel="canonical" href="{{ url()->current() }}">
+    @include('layouts.structured-data')
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

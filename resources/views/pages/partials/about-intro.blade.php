@@ -6,7 +6,7 @@
             <p>
                 I'm an Information Systems graduate from <span class="font-semibold text-ink">Universitas Teknologi Yogyakarta</span>.
                 Most of my work sits between building and testing: I write test cases, catch bugs before users run into them,
-                and build Laravel apps when a business needs one.
+                and build apps when a business needs one.
             </p>
             <p>
                 I've done the unglamorous parts too, like recording daily transactions at a salon and checking 600+ student
@@ -25,7 +25,7 @@
             </div>
             <div>
                 <dt class="text-muted">Age</dt>
-                <dd class="text-ink font-medium">21</dd>
+                <dd class="text-ink font-medium">22</dd>
             </div>
             <div>
                 <dt class="text-muted">Based in</dt>

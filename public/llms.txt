@@ -1,0 +1,23 @@
+# Jeremia Imanuel Werung
+
+> Jeremia Imanuel Werung is a QA engineer and web developer based in Yogyakarta, Indonesia. He holds a Bachelor of Information Systems (S.Kom) from Universitas Teknologi Yogyakarta and works on manual and automated software testing (Playwright, PHPUnit) and Laravel web development.
+
+This is his personal portfolio. It lists real projects running in production, QA case studies with test cases and bug reports, and a live dashboard of his GitHub and coding activity.
+
+## Pages
+
+- [Home](https://jeremiawerung.my.id/): overview, featured work, and skills
+- [About](https://jeremiawerung.my.id/about): background, work experience, and education
+- [Projects](https://jeremiawerung.my.id/projects): RFID school attendance system, Aurora Beauty Salon reservation system, Cetak Foto Jogja business platform, Gracia Photo company profile, Estimator.id, RTHP System (DLH Yogyakarta)
+- [Case Studies](https://jeremiawerung.my.id/case-studies): QA work from requirements to test cases, bug reports, and Playwright automation
+- [Achievements](https://jeremiawerung.my.id/achievements): certifications and licenses
+- [Insights](https://jeremiawerung.my.id/insights): articles on software testing and quality engineering
+- [Dashboard](https://jeremiawerung.my.id/dashboard): live GitHub contributions, coding activity, and site traffic
+- [Contact](https://jeremiawerung.my.id/contact): email, WhatsApp, LinkedIn, and Instagram
+
+## Profiles
+
+- [GitHub](https://github.com/jeremiawerung)
+- [LinkedIn](https://www.linkedin.com/in/jeremiaimanuelwerung/)
+- [Medium](https://medium.com/@jeremia07102004)
+- [Instagram](https://instagram.com/jeremia.werung)
