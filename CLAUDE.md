@@ -10,7 +10,7 @@
 
 1. Aturan global: `C:/laragon/notes/aturan-ai.md` (kapan wajib izin, format konfirmasi A-D)
 2. Aturan security: `C:/laragon/notes/aturan-security-laravel.md`
-3. Status + riwayat proyek: `C:/laragon/notes/inbox/redesign-portofolio-dashboard.md` (35KB, baca per bagian pakai Grep)
+3. Status + riwayat proyek: `C:/laragon/notes/proyek/portofolio/redesign-portofolio-dashboard.md` (posisi sekarang, pendek). Riwayat lengkap di `redesign-portofolio-dashboard-arsip.md` (baca per bagian pakai Grep)
 
 Urutan kalau bentrok: aturan global > aturan security > file ini.
 
