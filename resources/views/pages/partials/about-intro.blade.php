@@ -5,15 +5,20 @@
         <div class="space-y-4 text-ink-2 leading-relaxed">
             <p>
                 I'm an Information Systems graduate from <span class="font-semibold text-ink">Universitas Teknologi Yogyakarta</span>.
-                Most of my work sits between building and testing: I write test cases, catch bugs before users run into them,
-                and build apps when a business needs one.
+                Most of my work sits between building and testing: I analyze what users need, write it down as a PRD, user stories,
+                and an ERD, build the app, then test it with test cases and Playwright before and after release.
+            </p>
+            <p>
+                I've turned manual processes into digital systems, like salon booking records into online reservations and payments,
+                and school and church attendance logs into RFID card attendance.
             </p>
             <p>
                 I've done the unglamorous parts too, like recording daily transactions at a salon and checking 600+ student
                 records before they went to print. That habit of double checking is what I bring to QA.
             </p>
             <p>
-                Right now I'm looking for a QA or web development role where I can keep learning from a real product team.
+                Right now I freelance at GraciaStudio, building RFID attendance for schools and churches, while looking for a QA or
+                web development role where I can keep learning from a real product team.
             </p>
         </div>
 
@@ -53,6 +58,12 @@
                 <h3 class="font-semibold text-ink">Web development</h3>
                 <p class="mt-1 text-sm text-ink-2 leading-relaxed">
                     Laravel, Filament, and Tailwind CSS. I build and maintain web apps that real businesses use every day.
+                </p>
+            </div>
+            <div class="py-4">
+                <h3 class="font-semibold text-ink">Requirements analysis</h3>
+                <p class="mt-1 text-sm text-ink-2 leading-relaxed">
+                    Mapping user needs and business processes into a PRD, user stories, and an ERD that guide development.
                 </p>
             </div>
             <div class="py-4">

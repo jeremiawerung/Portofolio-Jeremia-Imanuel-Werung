@@ -5,7 +5,7 @@
 @section('description', 'Projects by Jeremia Imanuel Werung: production web apps, an RFID attendance system, and QA work.')
 
 @section('content')
-    <x-page-header title="Projects" lead="Things I've built or tested, from client websites running in production to academic QA projects." />
+    <x-page-header title="Projects" lead="Things I've built or tested, from client websites running in production to UI/UX and QA work on company projects." />
 
     @include('pages.partials.projects')
 

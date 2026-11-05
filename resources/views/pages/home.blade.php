@@ -11,10 +11,10 @@
         <p class="page-lead mt-5">
             I test software and build it. I write test cases, automate end-to-end flows with Playwright,
             and build Laravel apps that people actually use, like a salon reservation system and an offline-first
-            RFID attendance system for schools.
+            RFID attendance system for schools and churches.
         </p>
         <p class="page-lead mt-3">
-            Fresh Information Systems graduate from Universitas Teknologi Yogyakarta, open to QA and web development roles.
+            Fresh Information Systems graduate from Universitas Teknologi Yogyakarta, freelancing at GraciaStudio and open to QA and web development roles.
         </p>
 
         <div class="mt-7 flex flex-wrap gap-3">
@@ -43,8 +43,8 @@
 
         @php
             $featured = [
-                ['img' => 'imagePresensiRFID.jpg', 'title' => 'RFID School Attendance System', 'tag' => 'Laravel, Filament, IoT', 'text' => 'Offline-first attendance with a custom WiFi card reader that signs every request. Covered by 244 PHPUnit tests.'],
-                ['img' => 'image.png', 'title' => 'Aurora Beauty Salon System', 'tag' => 'Live in production', 'text' => 'Reservations with a two-stage payment. I wrote the test cases, ran black-box tests, and automated the booking flow.'],
+                ['img' => 'imagePresensiRFID.jpg', 'title' => 'RFID Attendance System', 'tag' => 'Laravel, Filament, IoT', 'text' => 'One reusable system, available for schools and churches, with a custom WiFi card reader that signs every request. Covered by 580+ automated tests.'],
+                ['img' => 'image.png', 'title' => 'Aurora Beauty Salon System', 'tag' => 'Live in production', 'text' => 'Reservations with a two-stage payment. I wrote the requirements, ran 49 manual test cases, and built 51 Playwright tests.'],
                 ['img' => 'imageGraciaPhoto.jpg', 'title' => 'Gracia Photo Company Profile', 'tag' => 'Business website', 'text' => 'A 5-page site with an installation simulator for schools, WCAG AA contrast, and hardened security headers.'],
             ];
         @endphp

@@ -8,9 +8,9 @@ This is his personal portfolio. It lists real projects running in production, QA
 
 - [Home](https://jeremiawerung.my.id/): overview, featured work, and skills
 - [About](https://jeremiawerung.my.id/about): background, work experience, and education
-- [Projects](https://jeremiawerung.my.id/projects): RFID school attendance system, Aurora Beauty Salon reservation system, Cetak Foto Jogja business platform, Gracia Photo company profile, Estimator.id, RTHP System (DLH Yogyakarta)
+- [Projects](https://jeremiawerung.my.id/projects): RFID attendance system for schools and churches, Aurora Beauty Salon reservation system, Cetak Foto Jogja business platform, Gracia Photo company profile, Estimator.id, RTHP System (DLH Yogyakarta)
 - [Case Studies](https://jeremiawerung.my.id/case-studies): QA work from requirements to test cases, bug reports, and Playwright automation
-- [Achievements](https://jeremiawerung.my.id/achievements): certifications and licenses
+- [Achievements](https://jeremiawerung.my.id/achievements): reference letters, certifications, and test scores
 - [Insights](https://jeremiawerung.my.id/insights): articles on software testing and quality engineering
 - [Dashboard](https://jeremiawerung.my.id/dashboard): live GitHub contributions, coding activity, and site traffic
 - [Contact](https://jeremiawerung.my.id/contact): email, WhatsApp, LinkedIn, and Instagram

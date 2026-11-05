@@ -23,7 +23,7 @@
                         <div class="space-y-3 text-sm text-ink-2">
                             <p>
                                 Focused on software engineering, web development, database management, and system analysis.
-                                Completed thesis on the development of an integrated information system for Aurora Beauty Salon.
+                                Thesis: Implementation of a Web-Based Salon Service Reservation Information System.
                             </p>
                         </div>
                         <div class="mt-4">

@@ -1,15 +1,15 @@
 {{-- Projects Grid --}}
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
 
-    {{-- Featured Project - Presensi Sekolah RFID (lebar 2 kolom) --}}
+    {{-- Featured Project - Presensi RFID (lebar 2 kolom) --}}
     <div class="reveal md:col-span-2">
         <div class="glass-card overflow-hidden project-card group cursor-pointer h-full lg:grid lg:grid-cols-2">
             <div class="relative h-48 sm:h-56 lg:h-full lg:min-h-[320px] overflow-hidden">
-                <img src="{{ asset('images/imagePresensiRFID.jpg') }}" alt="RFID reader prototype for the school attendance system" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <img src="{{ asset('images/imagePresensiRFID.jpg') }}" alt="RFID reader prototype for the attendance system" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="w-full h-full bg-surface-2 flex items-center justify-center">
                     <div class="text-center">
                         <i data-lucide="nfc" class="w-12 h-12 text-ink mx-auto mb-2"></i>
-                        <span class="text-ink text-sm font-medium">Presensi Sekolah RFID</span>
+                        <span class="text-ink text-sm font-medium">RFID Attendance</span>
                     </div>
                 </div>
                 <div class="project-overlay">
@@ -34,13 +34,13 @@
                     <span class="tag text-[10px] py-0.5 px-2">Featured</span>
                 </div>
                 <h3 class="text-lg lg:text-xl font-bold text-ink mb-2 group-hover:text-accent transition-colors">
-                    RFID School Attendance System
+                    RFID Attendance System
                 </h3>
                 <p class="text-sm text-ink-2 leading-relaxed mb-3">
-                    An offline-first attendance system for schools: students tap an RFID card at kiosk points (gate, prayer room, library) and attendance is recorded instantly. Built with Laravel 13, Filament 5, and SQLite, featuring flexible Excel import, bulk card registration, attendance &amp; prayer rules, daily/monthly reports with Excel export, automatic backups, and a portable Windows package for school PCs.
+                    One reusable attendance system, already available for schools and churches and adaptable to other businesses. Every site shares the same core (cards, kiosks, and card readers), with data and rules adjusted to each place. Built with Laravel 13, Filament 5, and SQLite, featuring flexible Excel import, bulk card registration, daily/monthly reports with Excel export, automatic backups, and a Windows installation package that keeps running without internet.
                 </p>
                 <p class="text-sm text-ink-2 leading-relaxed mb-4">
-                    Also designed a custom WiFi card reader (Wemos D1 mini + RC522) whose requests are HMAC-signed per device with timestamp checks and replay protection. Covered by 244 PHPUnit tests and 24 JavaScript tests.
+                    Also designed a custom WiFi card reader (Wemos D1 mini + RC522) whose requests are HMAC-signed per device with timestamp checks and replay protection. Covered by more than 580 automated tests, so existing features stay safe with every change.
                 </p>
                 <div class="flex flex-wrap gap-2">
                     <span class="tag text-xs">Laravel &amp; Filament</span>
@@ -134,11 +134,12 @@
                     Aurora Beauty Salon System
                 </h3>
                 <p class="text-sm text-ink-2 leading-relaxed mb-4">
-                    Created comprehensive test cases, conducted Black Box testing on critical features (Login, Booking, Payment), and automated the booking-to-payment flow with Playwright. Still maintaining the live site: in Oct 2026 I fixed the defects reported by an external black-box QA review and resolved verification emails that were stuck in an unprocessed queue.
+                    Wrote the PRD, user stories, and ERD for 12+ modules, plus an RTM linking each user story to its test cases. Ran 49 manual test cases, all passed, and built 51 Playwright tests from registration to payment, with GitHub Actions running them on every code change. Still maintaining the live site: in Oct 2026 I fixed the defects reported by an external black-box QA review and resolved verification emails that were stuck in an unprocessed queue.
                 </p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="tag text-xs">Test Planning</span>
-                    <span class="tag text-xs">Black Box Testing</span>
+                    <span class="tag text-xs">Requirements &amp; RTM</span>
+                    <span class="tag text-xs">Playwright</span>
+                    <span class="tag text-xs">GitHub Actions</span>
                     <span class="tag text-xs">Production Support</span>
                 </div>
             </div>
@@ -174,15 +175,16 @@
             <div class="p-6">
                 <div class="flex items-center gap-2 mb-3">
                     <span class="w-2 h-2 rounded-full bg-accent"></span>
-                    <span class="text-xs text-muted uppercase tracking-wider font-medium">Academic Project</span>
+                    <span class="text-xs text-muted uppercase tracking-wider font-medium">PT. Swevel Universal Media, 2025</span>
                 </div>
                 <h3 class="text-lg font-bold text-ink mb-2 group-hover:text-accent transition-colors">
                     Estimator.id (AI Integration)
                 </h3>
                 <p class="text-sm text-ink-2 leading-relaxed mb-4">
-                    Conducted specific testing on AI-generated responses for material price estimation, evaluated performance monitoring AI latency, and documented validation scenarios.
+                    Designed the interface of an AI-powered price estimation and RAB (cost budget) app and helped build the AI features behind it. Tested AI results against real vendor prices so they could support decisions, monitored AI response speed across scenarios, and reported the results to the team.
                 </p>
                 <div class="flex flex-wrap gap-2">
+                    <span class="tag text-xs">UI/UX Design</span>
                     <span class="tag text-xs">AI Accuracy</span>
                     <span class="tag text-xs">Performance Testing</span>
                     <span class="tag text-xs">Validation</span>
@@ -216,15 +218,16 @@
             <div class="p-6">
                 <div class="flex items-center gap-2 mb-3">
                     <span class="w-2 h-2 rounded-full bg-accent"></span>
-                    <span class="text-xs text-muted uppercase tracking-wider font-medium">Academic Project</span>
+                    <span class="text-xs text-muted uppercase tracking-wider font-medium">Nov - Dec 2025</span>
                 </div>
                 <h3 class="text-lg font-bold text-ink mb-2 group-hover:text-accent transition-colors">
                     RTHP System (DLH Yogyakarta)
                 </h3>
                 <p class="text-sm text-ink-2 leading-relaxed mb-4">
-                    Executed manual testing on the Green Open Space mapping system, verified Admin Dashboard CRUD operations, and ensured data stability.
+                    Designed the Green Open Space mapping system in Figma and tested navigation, filters, the map view, login, and the admin add, edit, and delete features. Received a reference letter from the Director of PT. Swevel Universal Media with a very good performance rating.
                 </p>
                 <div class="flex flex-wrap gap-2">
+                    <span class="tag text-xs">UI/UX Design</span>
                     <span class="tag text-xs">Functional Testing</span>
                     <span class="tag text-xs">CRUD Validation</span>
                     <span class="tag text-xs">Manual Testing</span>
@@ -267,7 +270,7 @@
                     Cetak Foto Jogja: Business Platform & ID Card Verification System
                 </h3>
                 <p class="text-sm text-ink-2 leading-relaxed mb-4">
-                    As IT Developer &amp; Production Support, built and maintained Cetak Foto Jogja's public reservation website (photo printing &amp; photographer rental) with automated WhatsApp notifications and Airtable logging, plus an internal ID Card Data Verification system with dynamic per-institution field schemas, automated Google Sheets sync, and fuzzy-match conflict resolution. Reconciled student biodata and performed final QA before printing. Live in production across 3 institutions and 600+ records.
+                    As IT Developer &amp; Production Support, built and maintained Cetak Foto Jogja's public reservation website (photo printing &amp; photographer rental) with automated WhatsApp notifications and Airtable logging, plus an internal ID Card Data Verification system with dynamic per-institution field schemas, automated Google Sheets sync, and fuzzy-match conflict resolution with AI checks. Wrote the PRD, user stories, and ERD for 4 core modules and prepared 280+ automated tests. Reconciled student biodata and performed final QA before printing. Live in production across 3 institutions and 600+ records.
                 </p>
                 <div class="flex flex-wrap gap-2">
                     <span class="tag text-xs">Laravel & MySQL</span>

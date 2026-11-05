@@ -1,10 +1,12 @@
 @php
     $skills = [
-        'Quality assurance' => 'Manual testing, functional testing, UI/UX testing, test case design, bug reporting, Selenium, Playwright (E2E), PHPUnit',
-        'System analysis' => 'draw.io, use case diagrams, activity diagrams, flowcharts, ERD, system workflows',
+        'Quality assurance' => 'Test case design, manual testing, black box testing, regression testing, functional testing, UI/UX testing, Design QA, API testing (Postman), bug reporting, Selenium, Playwright (E2E), PHPUnit',
+        'System analysis' => 'Requirements analysis, business process flows, PRD, user stories, ERD, RTM, draw.io, use case diagrams, activity diagrams, flowcharts, system workflows',
         'Data & analytics' => 'Data analysis, data processing, RapidMiner, Microsoft Excel, Google Analytics',
-        'Development & database' => 'PHP / Laravel, Filament, HTML / CSS, Tailwind CSS, JavaScript, Python, MySQL, SQLite, Arduino (ESP8266)',
-        'Tools' => 'Git / GitHub, VS Code, Postman, Figma, Notion, Trello / Jira, Claude Code and AI agents, cPanel / SSH deploy',
+        'Development & database' => 'PHP / Laravel, Filament, JavaScript, Java, HTML / CSS, Tailwind CSS, Python, REST API, MySQL, SQLite, SQL',
+        'AI & hardware' => 'AI integration in applications, Wemos D1 mini and RC522 programming, Arduino (ESP8266)',
+        'Design' => 'Figma, Adobe Photoshop',
+        'Tools' => 'Git / GitHub, GitHub Actions, VS Code, Postman, Notion, Trello / Jira, Claude Code and AI agents, cPanel / SSH deploy, Microsoft Word',
         'Soft skills' => 'Analytical thinking, attention to detail, problem solving, clear communication, adaptability',
     ];
 @endphp

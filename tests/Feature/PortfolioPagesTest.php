@@ -16,7 +16,7 @@ class PortfolioPagesTest extends TestCase
             'home' => ['/', 'Hi, I'],
             'about' => ['/about', 'Career'],
             'achievements' => ['/achievements', 'SQL for Data Science'],
-            'projects' => ['/projects', 'RFID School Attendance System'],
+            'projects' => ['/projects', 'RFID Attendance System'],
             'case studies' => ['/case-studies', 'Task Module'],
             'insights' => ['/insights', 'Building a QA Strategy from Scratch'],
             'dashboard' => ['/dashboard', 'GitHub Contributions'],
